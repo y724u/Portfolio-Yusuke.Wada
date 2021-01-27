@@ -3,4 +3,4 @@
 ### フレームワーク　jQuery
 ### ライブラリ　swiper.js,WOW.js,animate.css
 ### タスクランナー　npm script
-### パッケージマネージャー　yarn
+### パッケージマネージャー　npm
