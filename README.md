@@ -2,5 +2,6 @@
 ### 使用言語　HTML,CSS/SCSS,JavaScript
 ### フレームワーク　jQuery
 ### ライブラリ　swiper.js,WOW.js,animate.css
-### タスクランナー　npm script
 ### パッケージマネージャー　npm
+### タスクランナー　npm script
+
