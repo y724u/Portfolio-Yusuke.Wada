@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "all": "run-p server watch:css",
-    "css:scss": "node-sass src/scss/application.scss -o src/css --source-map src/css",
-    "css:postcss": "postcss src/css/application.css -o src/css/application.min.css",
+    "all" : "run-p server watch:css",
+    "css:scss": "node-sass src/scss/style.scss -o src/css --source-map src/css",
+    "css:postcss": "postcss src/css/style.css -o src/css/style.min.css",
     "watch:css": "watch 'run-s css:scss css:postcss' ./src/scss",
     "server": "browser-sync start --server --files='src/html/*.html, src/css/*.css, src/js/*.js' --startPath='src/html'",
     "test": "echo 'npm run test....'"
@@ -30,8 +30,5 @@
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^8.3.1",
     "watch": "^1.0.2"
-  },
-  "dependencies": {
-    "jquery": "^3.5.1"
   }
 }
