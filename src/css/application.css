@@ -439,9 +439,7 @@ common
     display: none; } }
 
 body {
-  background-color: #F3F3F3;
-  font-size: 16px;
-  color: #3E3E3E;
+  color: #424242;
   font-family: "Alata", sans-serif; }
 
 img {
@@ -451,6 +449,7 @@ img {
   margin: 800px;
   width: 200px;
   height: 200px;
-  background-color: red; }
+  background-color: green;
+  letter-spacing: 0.08em; }
 
 /*# sourceMappingURL=application.css.map */
