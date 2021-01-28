@@ -7,12 +7,21 @@ application
 @import "mixin";
 @import "variables";
 @import "common";
+@import "header";
+@import "about";
+@import "services";
+@import "works";
+@import "price";
+@import "contact";
+@import "footer";
+
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Noto+Sans+JP&display=swap');
+
 
 .test {
   margin: 800px;
   width: 200px;
   height: 200px;
-  background-color: green;
+  background-color: red;
   letter-spacing: 0.08em;
 }
