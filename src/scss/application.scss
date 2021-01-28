@@ -1,0 +1,15 @@
+/*================================================================
+application
+================================================================*/
+@charset "UTF-8";
+@import "reset";
+@import "mixin";
+@import "variables";
+@import "common";
+
+.test {
+  margin: 800px;
+  width: 200px;
+  height: 200px;
+  background-color: black;
+}
