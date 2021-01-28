@@ -1,10 +1,10 @@
-@charset "UTF-8";
 /*================================================================
 application
 ================================================================*/
 /*! destyle.css v1.0.15 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model */
 /* ============================================ */
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Noto+Sans+JP&display=swap");
 * {
   box-sizing: border-box; }
 
@@ -442,7 +442,7 @@ body {
   background-color: #F3F3F3;
   font-size: 16px;
   color: #3E3E3E;
-  font-family: "游ゴシック体", "Montserrat", "Manrope", "sans-serif"; }
+  font-family: "Alata", sans-serif; }
 
 img {
   width: 100%; }

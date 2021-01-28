@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*================================================================
 application
 ================================================================*/
@@ -6,6 +7,7 @@ application
 @import "mixin";
 @import "variables";
 @import "common";
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Noto+Sans+JP&display=swap');
 
 .test {
   margin: 800px;
