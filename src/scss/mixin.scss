@@ -2,7 +2,6 @@
 /*================================================================
 #mixin
 ================================================================*/
-
 //マップ型変数breakpointsを定義
 $breakpoints: ( //キー値
   'sm': 'screen and (max-width: 767px)', //767px以下（スマホ）用の表示
@@ -11,6 +10,7 @@ $breakpoints: ( //キー値
 
 //メディアクエリ用のmixinを定義。デフォ値はmd
 @mixin mq($breakpoint: md) {
+
   //map-get(マップ型変数, キー)で値を取得
   @media #{map-get($breakpoints, $breakpoint)} {
     //この中をカスタムできる
