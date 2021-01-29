@@ -1,4 +1,60 @@
 @charset "UTF-8";
+
 /*================================================================
 #header
 ================================================================*/
+.header {
+  background: url(/src/images/pc/mv.png) center right / cover;
+  height: 705px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &__container {
+    margin: 35px 120px 120px;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    height: 28px;
+  }
+
+  &__logo {
+    width: 50px;
+  }
+
+  &__list {
+    display: flex;
+    line-height: 28px;
+  }
+
+  &__item {
+
+    &+& {
+      margin-left: 45px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      position: absolute;
+      bottom: 2px;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 2px;
+      background: #333;
+      transform: scale(0, 1);
+      transform-origin: right top;
+      transition: transform .5s;
+    }
+
+    &:hover::after {
+      transform-origin: left top;
+      transform: scale(1, 1);
+    }
+  }
+}
