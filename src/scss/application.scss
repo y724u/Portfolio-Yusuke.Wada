@@ -3,15 +3,15 @@
 application
 ================================================================*/
 @charset "UTF-8";
-@import "reset";
-@import "mixin";
-@import "variables";
-@import "common";
-@import "header";
-@import "about";
-@import "services";
-@import "works";
-@import "price";
-@import "contact";
-@import "footer";
+@import "base/reset";
+@import "base/mixin";
+@import "base/variables";
+@import "base/common";
+@import "contents/header";
+@import "contents/about";
+@import "contents/services";
+@import "contents/works";
+@import "contents/price";
+@import "contents/contact";
+@import "contents/footer";
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Noto+Sans+JP&display=swap');
