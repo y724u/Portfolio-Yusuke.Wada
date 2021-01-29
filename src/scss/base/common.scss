@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/*================================================================
+common
+================================================================*/
+@include mq(sm) {
+  .is-pc {
+    display: none;
+  }
+}
+
+@include mq(md) {
+  .is-sp {
+    display: none;
+  }
+}
+
+body {
+  color: $font-black;
+  font-family: $font-family-alata;
+}
+
+img {
+  width: 100%;
+}
