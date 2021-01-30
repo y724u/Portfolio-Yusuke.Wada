@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "all": "run-p server watch:css",
-    "css:scss": "node-sass docs/scss/application.scss -o docs/css --source-map docs/css",
-    "css:postcss": "postcss docs/css/application.css -o docs/css/application.min.css",
-    "watch:css": "watch 'run-s css:scss css:postcss' ./docs/scss",
-    "server": "browser-sync start --server --files='docs/html/*.html, docs/css/*.css, docs/js/*.js' --startPath='docs/html'",
+    "css:scss": "node-sass src/scss/application.scss -o src/css --source-map src/css",
+    "css:postcss": "postcss src/css/application.css -o src/css/application.min.css",
+    "watch:css": "watch 'run-s css:scss css:postcss' ./src/scss",
+    "server": "browser-sync start --server --files='src/html/*.html, src/css/*.css, src/js/*.js' --startPath='src/html'",
     "test": "echo 'npm run test....'"
   },
   "repository": {
