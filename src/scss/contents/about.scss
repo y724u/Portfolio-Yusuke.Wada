@@ -1,4 +1,79 @@
 @charset "UTF-8";
+
 /*================================================================
 #about
 ================================================================*/
+.about {
+  background-color: $key-color-ash;
+  height: auto;
+  padding: 0 120px 0 180px;
+
+  &__container {
+    max-width: 1140px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__background {
+    background: url(/src/images/pc/about-logo.png) center center / cover;
+    margin-top: 29px;
+    width: 560px;
+    height: 317px;
+    position: absolute;
+    right: 0px;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    margin-top: 101px;
+  }
+
+  &__title {
+    color: $key-color-black;
+    font-size: $section-title-font-size;
+    letter-spacing: 0.06em;
+    line-height: 55px;
+
+    span {
+      position: relative;
+      display: inline-block;
+
+      &::after {
+        position: absolute;
+        bottom: 3px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 3px;
+        background: $key-color-black;
+      }
+    }
+  }
+
+  &__subtitle {
+    color: #8B8B8B;
+    font-family: $font-family-noto;
+    margin-top: 13px;
+    line-height: 24px;
+    letter-spacing: 0.12em;
+  }
+
+  &__right {
+    margin-top: 169px;
+    width: auto;
+    max-width: 658px;
+  }
+
+  &__description {
+    font-family: $font-family-noto;
+    line-height: 38px;
+
+    & + & {
+      margin-top: 24px;
+    }
+  }
+}
