@@ -450,7 +450,7 @@ img {
 #mv
 ================================================================*/
 .mv {
-  background: url(/src/images/pc/mv.png) center right/cover;
+  background: url(/docs/images/pc/mv.png) center right/cover;
   color: #000000;
   padding: 35px 120px 96px 120px; }
   .mv__container {
@@ -510,7 +510,7 @@ img {
     margin: 0 auto;
     position: relative; }
   .about__background {
-    background: url(/src/images/pc/about-logo.png) center center/cover;
+    background: url(/docs/images/pc/about-logo.png) center center/cover;
     margin-top: 29px;
     width: 560px;
     height: 317px;
