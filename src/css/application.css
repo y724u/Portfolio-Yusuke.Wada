@@ -452,10 +452,11 @@ img {
   background: url(/src/images/pc/mv.png) center right/cover;
   color: #000000;
   height: 705px;
-  max-width: 1200px;
   margin: 0 auto; }
   .header__container {
-    margin: 35px 120px 120px; }
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 35px 131px 0 119px; }
   .header__menu {
     display: flex;
     justify-content: space-between;
@@ -489,10 +490,12 @@ img {
   .header__title {
     font-size: 76px;
     margin-top: 338px;
+    line-height: 105px;
     letter-spacing: 0.27em; }
   .header__description {
     font-size: 34px;
-    margin-top: 30px;
+    margin-top: 15px;
+    line-height: 47px;
     letter-spacing: 0.11em;
     width: 700px; }
 
