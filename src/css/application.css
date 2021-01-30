@@ -454,25 +454,24 @@ img {
 ================================================================*/
 .about {
   background-color: #F5F5F5;
-  height: 459px;
-  padding: 0 180px 0 120px; }
+  height: auto; }
   .about__container {
-    max-width: 1140px;
+    max-width: 1440px;
+    padding: 0 180px 0 120px;
     margin: 0 auto;
     position: relative; }
   .about__background {
     background: url(/src/images/pc/about-logo.png) center center/cover;
     margin-top: 29px;
     width: 560px;
-    height: 318px;
+    height: 260px;
     position: absolute;
-    right: 0; }
+    right: 180px; }
   .about__box {
     display: flex;
     justify-content: space-between; }
   .about__left {
-    margin-top: 72px;
-    width: auto; }
+    margin-top: 72px; }
   .about__title {
     color: #000000;
     font-size: 40px;
@@ -497,7 +496,8 @@ img {
     letter-spacing: 0.12em; }
   .about__right {
     margin-top: 140px;
-    width: 658px; }
+    width: auto;
+    max-width: 658px; }
   .about__description {
     font-family: "Noto Sans JP", "sans-serif";
     line-height: 38px; }

@@ -5,11 +5,11 @@
 ================================================================*/
 .about {
   background-color: $key-color-ash;
-  height: 459px;
-  padding: 0 180px 0 120px;
+  height: auto;
 
   &__container {
-    max-width: 1140px;
+    max-width: 1440px;
+    padding: 0 180px 0 120px;
     margin: 0 auto;
     position: relative;
   }
@@ -18,9 +18,9 @@
     background: url(/src/images/pc/about-logo.png) center center / cover;
     margin-top: 29px;
     width: 560px;
-    height: 318px;
+    height: 260px;
     position: absolute;
-    right: 0;
+    right: 180px;
   }
 
   &__box {
@@ -30,7 +30,6 @@
 
   &__left {
     margin-top: 72px;
-    width: auto;
   }
 
   &__title {
@@ -65,7 +64,8 @@
 
   &__right {
     margin-top: 140px;
-    width: 658px;
+    width: auto;
+    max-width: 658px;
   }
 
   &__description {
