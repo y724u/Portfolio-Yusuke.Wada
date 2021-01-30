@@ -5,6 +5,7 @@
 ================================================================*/
 .header {
   background: url(/src/images/pc/mv.png) center right / cover;
+  color: $key-color-black;
   height: 705px;
   max-width: 1200px;
   margin: 0 auto;
@@ -29,6 +30,7 @@
   }
 
   &__item {
+    letter-spacing: 0.06em;
 
     &+& {
       margin-left: 45px;
@@ -56,5 +58,18 @@
       transform-origin: left top;
       transform: scale(1, 1);
     }
+  }
+
+  &__title {
+    font-size: 76px;
+    margin-top: 338px;
+    letter-spacing: 0.27em;
+  }
+
+  &__description {
+    font-size: 34px;
+    margin-top: 30px;
+    letter-spacing: 0.11em;
+    width: 700px;
   }
 }

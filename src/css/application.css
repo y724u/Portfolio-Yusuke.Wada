@@ -450,6 +450,7 @@ img {
 ================================================================*/
 .header {
   background: url(/src/images/pc/mv.png) center right/cover;
+  color: #000000;
   height: 705px;
   max-width: 1200px;
   margin: 0 auto; }
@@ -464,8 +465,10 @@ img {
   .header__list {
     display: flex;
     line-height: 28px; }
-  .header__item + .header__item {
-    margin-left: 45px; }
+  .header__item {
+    letter-spacing: 0.06em; }
+    .header__item + .header__item {
+      margin-left: 45px; }
   .header__link {
     position: relative;
     display: inline-block; }
@@ -483,6 +486,15 @@ img {
     .header__link:hover::after {
       transform-origin: left top;
       transform: scale(1, 1); }
+  .header__title {
+    font-size: 76px;
+    margin-top: 338px;
+    letter-spacing: 0.27em; }
+  .header__description {
+    font-size: 34px;
+    margin-top: 30px;
+    letter-spacing: 0.11em;
+    width: 700px; }
 
 /*================================================================
 #about
