@@ -457,7 +457,7 @@ img {
   height: auto; }
   .about__container {
     max-width: 1440px;
-    padding: 0 180px 0 120px;
+    padding: 0 120px 0 180px;
     margin: 0 auto;
     position: relative; }
   .about__background {
