@@ -474,7 +474,7 @@ img {
     display: inline-block; }
     .mv__link::after {
       position: absolute;
-      bottom: 2px;
+      bottom: 3px;
       left: 0;
       content: '';
       width: 100%;
@@ -503,24 +503,24 @@ img {
 ================================================================*/
 .about {
   background-color: #F5F5F5;
-  height: auto; }
+  height: auto;
+  padding: 0 120px 0 180px; }
   .about__container {
-    max-width: 1440px;
-    padding: 0 120px 0 180px;
+    max-width: 1140px;
     margin: 0 auto;
     position: relative; }
   .about__background {
     background: url(/src/images/pc/about-logo.png) center center/cover;
     margin-top: 29px;
     width: 560px;
-    height: 260px;
+    height: 317px;
     position: absolute;
-    right: 180px; }
+    right: 0px; }
   .about__box {
     display: flex;
     justify-content: space-between; }
   .about__left {
-    margin-top: 72px; }
+    margin-top: 101px; }
   .about__title {
     color: #000000;
     font-size: 40px;
@@ -531,11 +531,11 @@ img {
       display: inline-block; }
       .about__title span::after {
         position: absolute;
-        bottom: 2px;
+        bottom: 3px;
         left: 0;
         content: '';
         width: 100%;
-        height: 2px;
+        height: 3px;
         background: #000000; }
   .about__subtitle {
     color: #888888;
@@ -544,7 +544,7 @@ img {
     line-height: 24px;
     letter-spacing: 0.12em; }
   .about__right {
-    margin-top: 140px;
+    margin-top: 169px;
     width: auto;
     max-width: 658px; }
   .about__description {
