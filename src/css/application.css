@@ -447,8 +447,57 @@ img {
   width: 100%; }
 
 /*================================================================
-#header
+#mv
 ================================================================*/
+.mv {
+  background: url(/src/images/pc/mv.png) center right/cover;
+  color: #000000;
+  padding: 35px 120px 96px 120px; }
+  .mv__container {
+    max-width: 1200px;
+    margin: 0 auto; }
+  .mv__menu {
+    display: flex;
+    justify-content: space-between;
+    height: 28px; }
+  .mv__logo {
+    width: 50px; }
+  .mv__list {
+    display: flex;
+    line-height: 28px; }
+  .mv__item {
+    letter-spacing: 0.06em; }
+    .mv__item + .mv__item {
+      margin-left: 47px; }
+  .mv__link {
+    position: relative;
+    display: inline-block; }
+    .mv__link::after {
+      position: absolute;
+      bottom: 2px;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 2px;
+      background: #000000;
+      transform: scale(0, 1);
+      transform-origin: right top;
+      transition: transform .5s; }
+    .mv__link:hover::after {
+      transform-origin: left top;
+      transform: scale(1, 1); }
+  .mv__title {
+    font-size: 76px;
+    margin-top: 338px;
+    line-height: 105px;
+    letter-spacing: 0.27em; }
+  .mv__description {
+    font-size: 34px;
+    margin-top: 15px;
+    line-height: 47px;
+    letter-spacing: 0.11em;
+    width: 700px; }
+
 /*================================================================
 #about
 ================================================================*/
