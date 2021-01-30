@@ -446,53 +446,52 @@ img {
   width: 100%; }
 
 /*================================================================
-#header
+#mv
 ================================================================*/
-.header {
+.mv {
   background: url(/src/images/pc/mv.png) center right/cover;
   color: #000000;
-  height: 705px;
   margin: 0 auto; }
-  .header__container {
+  .mv__container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 35px 131px 0 119px; }
-  .header__menu {
+    padding: 35px 131px 96px 119px; }
+  .mv__menu {
     display: flex;
     justify-content: space-between;
     height: 28px; }
-  .header__logo {
+  .mv__logo {
     width: 50px; }
-  .header__list {
+  .mv__list {
     display: flex;
     line-height: 28px; }
-  .header__item {
+  .mv__item {
     letter-spacing: 0.06em; }
-    .header__item + .header__item {
-      margin-left: 45px; }
-  .header__link {
+    .mv__item + .mv__item {
+      margin-left: 47px; }
+  .mv__link {
     position: relative;
     display: inline-block; }
-    .header__link::after {
+    .mv__link::after {
       position: absolute;
       bottom: 2px;
       left: 0;
       content: '';
       width: 100%;
       height: 2px;
-      background: #333;
+      background: #000000;
       transform: scale(0, 1);
       transform-origin: right top;
       transition: transform .5s; }
-    .header__link:hover::after {
+    .mv__link:hover::after {
       transform-origin: left top;
       transform: scale(1, 1); }
-  .header__title {
+  .mv__title {
     font-size: 76px;
     margin-top: 338px;
     line-height: 105px;
     letter-spacing: 0.27em; }
-  .header__description {
+  .mv__description {
     font-size: 34px;
     margin-top: 15px;
     line-height: 47px;
