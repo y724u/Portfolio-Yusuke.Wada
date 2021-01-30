@@ -451,7 +451,6 @@ img {
 .mv {
   background: url(/src/images/pc/mv.png) center right/cover;
   color: #000000;
-  margin: 0 auto;
   padding: 35px 120px 96px 120px; }
   .mv__container {
     max-width: 1200px;
