@@ -453,9 +453,9 @@ img {
   color: #000000;
   margin: 0 auto; }
   .mv__container {
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 35px 131px 96px 119px; }
+    padding: 35px 120px 96px 120px; }
   .mv__menu {
     display: flex;
     justify-content: space-between;
