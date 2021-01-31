@@ -21,7 +21,7 @@
     color: $key-color-black;
     display: inline-block;
     font-size: $section-title-font-size;
-    letter-spacing: 0.06em;
+    letter-spacing: .06em;
     line-height: 55px;
     position: relative;
 
@@ -41,7 +41,7 @@
     font-family: $font-family-noto;
     margin-top: 14px;
     line-height: 24px;
-    letter-spacing: 0.12em;
+    letter-spacing: .12em;
   }
 
   &__contents {
@@ -57,14 +57,15 @@
 
       dt {
         line-height: 22px;
-        letter-spacing: 0.04em;
+        letter-spacing: .04em;
 
-        &:nth-child(2) {
+        span {
+          display: inline-block;
           font-size: 20px;
           font-family: $font-family-noto;
           font-weight: 500;
           line-height: 29px;
-          letter-spacing: 0.04em;
+          letter-spacing: .04em;
           margin-top: 10px;
         }
       }
@@ -99,7 +100,7 @@
     color: $key-color-black;
     display: inline-block;
     font-size: 18px;
-    letter-spacing: 0.04em;
+    letter-spacing: .04em;
     line-height: 25px;
     margin-right: 50px;
     position: relative;
@@ -119,6 +120,6 @@
     font-family: $font-family-noto;
     font-weight: 500;
     line-height: 24px;
-    letter-spacing: 0.14em;
+    letter-spacing: .14em;
   }
 }
