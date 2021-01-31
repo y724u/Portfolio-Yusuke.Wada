@@ -593,7 +593,7 @@ img {
     color: #FFFFFF;
     margin-top: 51px; }
     .services__contents div {
-      padding: 38px 40px 0 29px;
+      padding: 40px 40px 0 31px;
       height: 568px;
       width: 100%; }
       .services__contents div dt {
@@ -609,13 +609,13 @@ img {
       .services__contents div dd {
         font-family: "Noto Sans JP", "sans-serif";
         line-height: 27px;
-        margin-top: 324px; }
+        margin-top: 331px; }
   .services__item01 {
-    background: url(/docs/images/pc/services1.png) center center/cover; }
+    background: url(https://raw.githubusercontent.com/y724u/Portfolio-Yusuke.Wada/master/docs/images/pc/services1.png) center center/cover; }
   .services__item02 {
-    background: url(/docs/images/pc/services2.png) center center/cover; }
+    background: url(https://raw.githubusercontent.com/y724u/Portfolio-Yusuke.Wada/master/docs/images/pc/services2.png) center center/cover; }
   .services__item03 {
-    background: url(/docs/images/pc/services3.png) center center/cover; }
+    background: url(https://raw.githubusercontent.com/y724u/Portfolio-Yusuke.Wada/master/docs/images/pc/services3.png) center center/cover; }
   .services__skills {
     display: flex;
     width: 755px;
@@ -626,7 +626,7 @@ img {
     font-size: 18px;
     letter-spacing: 0.04em;
     line-height: 25px;
-    margin-right: 45px;
+    margin-right: 50px;
     position: relative; }
     .services__other::after {
       position: absolute;
