@@ -33,10 +33,7 @@
   }
 
   &__title {
-    color: $key-color-black;
-    font-size: $section-title-font-size;
-    letter-spacing: .06em;
-    line-height: 55px;
+    @extend %title-left;
 
     span {
       position: relative;
@@ -55,11 +52,7 @@
   }
 
   &__subtitle {
-    color: $sub-title-color-ash;
-    font-family: $font-family-noto;
-    margin-top: 13px;
-    line-height: 24px;
-    letter-spacing: .12em;
+    @extend %title-sub;
   }
 
   &__right {
