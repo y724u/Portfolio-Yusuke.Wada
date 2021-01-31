@@ -30,14 +30,7 @@ img {
   margin: 0 auto;
 }
 
-%title-left {
-  color: $key-color-black;
-  font-size: $section-title-font-size;
-  letter-spacing: .06em;
-  line-height: 55px;
-}
-
-%title-right {
+%title {
   color: $key-color-black;
   display: inline-block;
   font-size: $section-title-font-size;

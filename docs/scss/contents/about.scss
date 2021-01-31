@@ -9,8 +9,8 @@
   padding: 0 120px 0 180px;
 
   &__container {
+    @extend %container;
     max-width: 1140px;
-    margin: 0 auto;
     position: relative;
   }
 
@@ -33,11 +33,10 @@
   }
 
   &__title {
-    @extend %title-left;
+    @extend %title;
 
     span {
       position: relative;
-      display: inline-block;
 
       &::after {
         position: absolute;

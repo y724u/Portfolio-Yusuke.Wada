@@ -446,24 +446,18 @@ body {
 img {
   width: 100%; }
 
-.mv__container, .services__container {
+.mv__container, .about__container, .services__container {
   max-width: 1200px;
   margin: 0 auto; }
 
-.about__title {
-  color: #000000;
-  font-size: 40px;
-  letter-spacing: .06em;
-  line-height: 55px; }
-
-.services__title {
+.about__title, .services__title {
   color: #000000;
   display: inline-block;
   font-size: 40px;
   letter-spacing: .06em;
   line-height: 55px;
   position: relative; }
-  .services__title::after {
+  .about__title::after, .services__title::after {
     position: absolute;
     bottom: 3px;
     left: 0;
@@ -537,7 +531,6 @@ img {
   padding: 0 120px 0 180px; }
   .about__container {
     max-width: 1140px;
-    margin: 0 auto;
     position: relative; }
   .about__background {
     background: url(https://raw.githubusercontent.com/y724u/Portfolio-Yusuke.Wada/master/docs/images/pc/about-logo.png) center center/cover;
@@ -552,8 +545,7 @@ img {
   .about__left {
     margin-top: 101px; }
   .about__title span {
-    position: relative;
-    display: inline-block; }
+    position: relative; }
     .about__title span::after {
       position: absolute;
       bottom: 3px;
