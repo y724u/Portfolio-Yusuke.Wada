@@ -9,8 +9,8 @@
   padding: 0 120px 0 180px;
 
   &__container {
+    @extend %container;
     max-width: 1140px;
-    margin: 0 auto;
     position: relative;
   }
 
@@ -33,14 +33,10 @@
   }
 
   &__title {
-    color: $key-color-black;
-    font-size: $section-title-font-size;
-    letter-spacing: 0.06em;
-    line-height: 55px;
+    @extend %title;
 
     span {
       position: relative;
-      display: inline-block;
 
       &::after {
         position: absolute;
@@ -55,11 +51,7 @@
   }
 
   &__subtitle {
-    color: #8B8B8B;
-    font-family: $font-family-noto;
-    margin-top: 13px;
-    line-height: 24px;
-    letter-spacing: 0.12em;
+    @extend %title-sub;
   }
 
   &__right {

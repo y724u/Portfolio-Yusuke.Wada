@@ -9,8 +9,7 @@
   padding: 35px 120px 96px 120px;
 
   &__container {
-    max-width: 1200px;
-    margin: 0 auto;
+    @extend %container;
   }
 
   &__menu {
@@ -29,7 +28,7 @@
   }
 
   &__item {
-    letter-spacing: 0.06em;
+    letter-spacing: .06em;
 
     & + & {
       margin-left: 47px;
@@ -63,14 +62,14 @@
     font-size: 76px;
     margin-top: 338px;
     line-height: 105px;
-    letter-spacing: 0.27em;
+    letter-spacing: .27em;
   }
 
   &__description {
     font-size: 34px;
     margin-top: 15px;
     line-height: 47px;
-    letter-spacing: 0.11em;
+    letter-spacing: .11em;
     width: 700px;
   }
 }
