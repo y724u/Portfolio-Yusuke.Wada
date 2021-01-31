@@ -2,3 +2,123 @@
 /*================================================================
 #services
 ================================================================*/
+.services {
+  background-color: $key-color-ash;
+  height: auto;
+  padding: 114px 120px 112px 120px;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__box {
+    text-align: right;
+    margin-right: 56px;
+  }
+
+  &__title {
+    color: $key-color-black;
+    display: inline-block;
+    font-size: $section-title-font-size;
+    letter-spacing: 0.06em;
+    line-height: 55px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      bottom: 3px;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 3px;
+      background: $key-color-black;
+    }
+  }
+
+  &__subtitle {
+    color: #8B8B8B;
+    font-family: $font-family-noto;
+    margin-top: 14px;
+    line-height: 24px;
+    letter-spacing: 0.12em;
+  }
+
+  &__contents {
+    background-color: $key-color-black;
+    display: flex;
+    color: $key-color-white;
+    margin-top: 51px;
+
+    div {
+      padding: 38px 40px 0 29px;
+      height: 568px;
+      width: 100%;
+
+      dt {
+        line-height: 22px;
+        letter-spacing: 0.04em;
+
+        &:nth-child(2) {
+          font-size: 20px;
+          font-family: $font-family-noto;
+          font-weight: 500;
+          line-height: 29px;
+          letter-spacing: 0.04em;
+          margin-top: 10px;
+        }
+      }
+
+      dd {
+        font-family: $font-family-noto;
+        line-height: 27px;
+        margin-top: 324px;
+      }
+    }
+  }
+
+  &__item01 {
+    background: url(/docs/images/pc/services1.png) center center / cover;
+  }
+
+  &__item02 {
+    background: url(/docs/images/pc/services2.png) center center / cover;
+  }
+
+  &__item03 {
+    background: url(/docs/images/pc/services3.png) center center / cover;
+  }
+
+  &__skills {
+    display: flex;
+    width: 755px;
+    margin: 44px auto 0;
+  }
+  
+  &__other {
+    color: $key-color-black;
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    line-height: 25px;
+    margin-right: 45px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      bottom: 2px;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 2px;
+      background: $key-color-black;
+    }
+  }
+
+  &__languages {
+    font-family: $font-family-noto;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.14em;
+  }
+}
