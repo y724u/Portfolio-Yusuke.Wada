@@ -9,7 +9,10 @@
   padding: 122px 0px 125px 180px;
 
   &__container {
-    max-width: 1200px;
+    // max-width: 1200px;
+    position: relative;
+    // overflow: hidden;
+    margin-right: 0;
   }
 
   &__title {
@@ -36,9 +39,11 @@
 
 .swiper {
   &-container {
-    width: 1260px;
+    // widows: 1200px;
     height: 395px;
     margin-top: 56px;
+    // overflow: hidden;
+    visibility: visible;
   }
 
   &-inner {
@@ -47,25 +52,35 @@
     height: 303px;
   }
 
+  &-slide {
+
+  }
+
+
   &-button-prev {
-    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2253%22%20height%3D%2253%22%20viewBox%3D%220%200%2053%2053%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%3Cpath%20d%3D%22M26.5%2052.2639C40.729%2052.2639%2052.2639%2040.729%2052.2639%2026.5C52.2639%2012.271%2040.729%200.736115%2026.5%200.736115C12.271%200.736115%200.736084%2012.271%200.736084%2026.5C0.736084%2040.729%2012.271%2052.2639%2026.5%2052.2639Z%22%20stroke%3D%22%238B8B8B%22%2F%3E%0A%3Crect%20x%3D%2223.5997%22%20y%3D%2219.8308%22%20width%3D%228.83333%22%20height%3D%2214.7222%22%20fill%3D%22url(%23pattern0)%22%2F%3E%0A%3Cdefs%3E%0A%3Cpattern%20id%3D%22pattern0%22%20patternContentUnits%3D%22objectBoundingBox%22%20width%3D%221%22%20height%3D%221%22%3E%0A%3Cuse%20xlink%3Ahref%3D%22%23image0%22%20transform%3D%22scale(0.166667%200.1)%22%2F%3E%0A%3C%2Fpattern%3E%0A%3Cimage%20id%3D%22image0%22%20width%3D%226%22%20height%3D%2210%22%20xlink%3Ahref%3D%22data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAAYAAAAKCAYAAACXDi8zAAAAT0lEQVQImXXPsQmAQAwF0IeghY2z2jqBtSu4ga2NnbPcFIqQQuL5u%2FDgJ4GCFe0zvLPgwoYu4xy4o884BR4YMo6BZ5OllmpVdfnvud8HcQNx4xMWVjJNNAAAAABJRU5ErkJggg%3D%3D%22%2F%3E%0A%3C%2Fdefs%3E%0A%3C%2Fsvg%3E%0A');
+    background: url('data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2253%22%20height%3D%2253%22%20viewBox%3D%220%200%2053%2053%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%3Cpath%20d%3D%22M26.5%2052.2639C40.729%2052.2639%2052.2639%2040.729%2052.2639%2026.5C52.2639%2012.271%2040.729%200.736115%2026.5%200.736115C12.271%200.736115%200.736084%2012.271%200.736084%2026.5C0.736084%2040.729%2012.271%2052.2639%2026.5%2052.2639Z%22%20stroke%3D%22%238B8B8B%22%2F%3E%0A%3Crect%20x%3D%2223.5997%22%20y%3D%2219.8308%22%20width%3D%228.83333%22%20height%3D%2214.7222%22%20fill%3D%22url(%23pattern0)%22%2F%3E%0A%3Cdefs%3E%0A%3Cpattern%20id%3D%22pattern0%22%20patternContentUnits%3D%22objectBoundingBox%22%20width%3D%221%22%20height%3D%221%22%3E%0A%3Cuse%20xlink%3Ahref%3D%22%23image0%22%20transform%3D%22scale(0.166667%200.1)%22%2F%3E%0A%3C%2Fpattern%3E%0A%3Cimage%20id%3D%22image0%22%20width%3D%226%22%20height%3D%2210%22%20xlink%3Ahref%3D%22data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAAYAAAAKCAYAAACXDi8zAAAAT0lEQVQImXXPsQmAQAwF0IeghY2z2jqBtSu4ga2NnbPcFIqQQuL5u%2FDgJ4GCFe0zvLPgwoYu4xy4o884BR4YMo6BZ5OllmpVdfnvud8HcQNx4xMWVjJNNAAAAABJRU5ErkJggg%3D%3D%22%2F%3E%0A%3C%2Fdefs%3E%0A%3C%2Fsvg%3E%0A') no-repeat;
+    outline: none;
     transform: scale(-1, 1);
     width: 56px;
     height: 56px;
-    top: 325px;
-    left: calc(50% - 200px);
+    top: 20px;
+    left: calc(100% - 200px);
+    position: absolute;
 
     &:after {
       content: none;
     }
   }
 
+
   &-button-next {
-    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2253%22%20height%3D%2253%22%20viewBox%3D%220%200%2053%2053%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%3Cpath%20d%3D%22M26.5%2052.2639C40.729%2052.2639%2052.2639%2040.729%2052.2639%2026.5C52.2639%2012.271%2040.729%200.736115%2026.5%200.736115C12.271%200.736115%200.736084%2012.271%200.736084%2026.5C0.736084%2040.729%2012.271%2052.2639%2026.5%2052.2639Z%22%20stroke%3D%22%238B8B8B%22%2F%3E%0A%3Crect%20x%3D%2223.5997%22%20y%3D%2219.8308%22%20width%3D%228.83333%22%20height%3D%2214.7222%22%20fill%3D%22url(%23pattern0)%22%2F%3E%0A%3Cdefs%3E%0A%3Cpattern%20id%3D%22pattern0%22%20patternContentUnits%3D%22objectBoundingBox%22%20width%3D%221%22%20height%3D%221%22%3E%0A%3Cuse%20xlink%3Ahref%3D%22%23image0%22%20transform%3D%22scale(0.166667%200.1)%22%2F%3E%0A%3C%2Fpattern%3E%0A%3Cimage%20id%3D%22image0%22%20width%3D%226%22%20height%3D%2210%22%20xlink%3Ahref%3D%22data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAAYAAAAKCAYAAACXDi8zAAAAT0lEQVQImXXPsQmAQAwF0IeghY2z2jqBtSu4ga2NnbPcFIqQQuL5u%2FDgJ4GCFe0zvLPgwoYu4xy4o884BR4YMo6BZ5OllmpVdfnvud8HcQNx4xMWVjJNNAAAAABJRU5ErkJggg%3D%3D%22%2F%3E%0A%3C%2Fdefs%3E%0A%3C%2Fsvg%3E%0A');
+    background: url('data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2253%22%20height%3D%2253%22%20viewBox%3D%220%200%2053%2053%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%3Cpath%20d%3D%22M26.5%2052.2639C40.729%2052.2639%2052.2639%2040.729%2052.2639%2026.5C52.2639%2012.271%2040.729%200.736115%2026.5%200.736115C12.271%200.736115%200.736084%2012.271%200.736084%2026.5C0.736084%2040.729%2012.271%2052.2639%2026.5%2052.2639Z%22%20stroke%3D%22%238B8B8B%22%2F%3E%0A%3Crect%20x%3D%2223.5997%22%20y%3D%2219.8308%22%20width%3D%228.83333%22%20height%3D%2214.7222%22%20fill%3D%22url(%23pattern0)%22%2F%3E%0A%3Cdefs%3E%0A%3Cpattern%20id%3D%22pattern0%22%20patternContentUnits%3D%22objectBoundingBox%22%20width%3D%221%22%20height%3D%221%22%3E%0A%3Cuse%20xlink%3Ahref%3D%22%23image0%22%20transform%3D%22scale(0.166667%200.1)%22%2F%3E%0A%3C%2Fpattern%3E%0A%3Cimage%20id%3D%22image0%22%20width%3D%226%22%20height%3D%2210%22%20xlink%3Ahref%3D%22data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAAYAAAAKCAYAAACXDi8zAAAAT0lEQVQImXXPsQmAQAwF0IeghY2z2jqBtSu4ga2NnbPcFIqQQuL5u%2FDgJ4GCFe0zvLPgwoYu4xy4o884BR4YMo6BZ5OllmpVdfnvud8HcQNx4xMWVjJNNAAAAABJRU5ErkJggg%3D%3D%22%2F%3E%0A%3C%2Fdefs%3E%0A%3C%2Fsvg%3E%0A') no-repeat;
+    outline: none;
     width: 56px;
     height: 56px;
-    top: 325px;
-    right: calc(50% - 200px);
+    top: 20px;
+    right: 80px;
+    position: absolute;
 
     &:after {
       content: none;
