@@ -42,7 +42,7 @@
   }
 
   &__contents {
-    color: $key-color-black;
+    color: $font-black;
     font-family: $font-family-noto;
     font-weight: 500;
     font-size: 20px;
@@ -58,7 +58,7 @@
       content: '';
       width: 100%;
       height: 1px;
-      background: $font-black;
+      background: rgba(66, 66, 66, 0.2);
     }
 
     span {
