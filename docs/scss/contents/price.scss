@@ -5,7 +5,7 @@
 ================================================================*/
 .price {
   @extend %section;
-  padding: 159px 120px  160px 180px;
+  padding: 159px 120px 160px 180px;
 
   &__container {
     @extend %container;
@@ -26,24 +26,19 @@
   }
 
   &__list {
-    margin-top: 55px;
-    margin-right: 246px;
+    margin: 10px 250px 0 0;
   }
 
   &__item {
-    display: flex;
     align-items: center;
-
-    &+& {
-      margin-top: 91px;
-    }
-
+    display: flex;
+    height: 121px;
   }
 
   &__image {
-    width: auto;
-    height: auto;
-    padding-right: 33px;
+    width: 42px;
+    height: 41px;
+    margin-right: 33px;
   }
 
   &__contents {
@@ -58,7 +53,7 @@
 
     ::after {
       position: absolute;
-      bottom: -50px;
+      bottom: -45px;
       left: 0;
       content: '';
       width: 100%;
@@ -68,6 +63,7 @@
 
     span {
       float: right;
+      padding-right: 10px;
     }
   }
 }
