@@ -1,4 +1,73 @@
 @charset "UTF-8";
+
 /*================================================================
 #price
 ================================================================*/
+.price {
+  @extend %section;
+  padding: 159px 120px  160px 180px;
+
+  &__container {
+    @extend %container;
+    max-width: 1140px;
+  }
+
+  &__box {
+    text-align: right;
+    margin-right: 56px;
+  }
+
+  &__title {
+    @extend %title;
+  }
+
+  &__subtitle {
+    @extend %title-sub;
+  }
+
+  &__list {
+    margin-top: 55px;
+    margin-right: 246px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &+& {
+      margin-top: 91px;
+    }
+
+  }
+
+  &__image {
+    width: auto;
+    height: auto;
+    padding-right: 33px;
+  }
+
+  &__contents {
+    color: $key-color-black;
+    font-family: $font-family-noto;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: .08em;
+    position: relative;
+    width: 100%;
+
+    ::after {
+      position: absolute;
+      bottom: -50px;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 1px;
+      background: $font-black;
+    }
+
+    span {
+      float: right;
+    }
+  }
+}

@@ -4,9 +4,7 @@
 #about
 ================================================================*/
 .about {
-  background-color: $key-color-ash;
-  height: auto;
-  padding: 0 120px 0 180px;
+  @extend %section;
 
   &__container {
     @extend %container;
