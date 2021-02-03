@@ -25,6 +25,12 @@ img {
   width: 100%;
 }
 
+%section {
+  background-color: $key-color-ash;
+  height: auto;
+  padding: 0 120px 0 180px;
+}
+
 %container {
   max-width: 1200px;
   margin: 0 auto;

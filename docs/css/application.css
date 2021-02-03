@@ -446,7 +446,12 @@ body {
 img {
   width: 100%; }
 
-.mv__container, .about__container, .services__container {
+.about, .price {
+  background-color: #F5F5F5;
+  height: auto;
+  padding: 0 120px 0 180px; }
+
+.mv__container, .about__container, .services__container, .price__container {
   max-width: 1200px;
   margin: 0 auto; }
 
@@ -546,31 +551,23 @@ img {
     width: 560px;
     height: 317px;
     position: absolute;
-    right: 0px; }
-  .about__box {
-    display: flex;
-    justify-content: space-between; }
-  .about__left {
-    margin-top: 101px; }
-  .about__title span {
-    position: relative; }
-    .about__title span::after {
-      position: absolute;
-      bottom: 3px;
-      left: 0;
-      content: '';
-      width: 100%;
-      height: 3px;
-      background: #000000; }
-  .about__right {
-    margin-top: 169px;
-    width: auto;
-    max-width: 658px; }
-  .about__description {
-    font-family: "Noto Sans JP", "sans-serif";
-    line-height: 38px; }
-    .about__description + .about__description {
-      margin-top: 24px; }
+    bottom: 3px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #000000; }
+
+.about__right {
+  margin-top: 169px;
+  width: auto;
+  max-width: 658px; }
+
+.about__description {
+  font-family: "Noto Sans JP", "sans-serif";
+  line-height: 38px; }
+  .about__description + .about__description {
+    margin-top: 24px; }
 
 /*================================================================
 #services
@@ -689,6 +686,46 @@ img {
 /*================================================================
 #price
 ================================================================*/
+.price {
+  padding: 159px 120px 160px 180px; }
+  .price__container {
+    max-width: 1140px; }
+  .price__box {
+    text-align: right;
+    margin-right: 56px; }
+  .price__list {
+    margin: 10px 250px 0 0; }
+  .price__item {
+    align-items: center;
+    display: flex;
+    height: 121px; }
+  .price__image {
+    width: 42px;
+    height: 41px;
+    margin-right: 33px; }
+  .price__wrapper {
+    align-items: center;
+    display: flex;
+    color: #424242;
+    font-family: "Noto Sans JP", "sans-serif";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: .08em;
+    position: relative;
+    width: 100%;
+    justify-content: space-between; }
+    .price__wrapper ::after {
+      background: rgba(66, 66, 66, 0.2);
+      bottom: -45px;
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 1px; }
+  .price__detail {
+    padding-right: 10px; }
+
 /*================================================================
 #contact
 ================================================================*/
