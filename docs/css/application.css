@@ -455,14 +455,14 @@ img {
   max-width: 1200px;
   margin: 0 auto; }
 
-.about__title, .services__title, .works__title {
+.about__title, .services__title, .works__title, .price__title {
   color: #000000;
   display: inline-block;
   font-size: 40px;
   letter-spacing: .06em;
   line-height: 55px;
   position: relative; }
-  .about__title::after, .services__title::after, .works__title::after {
+  .about__title::after, .services__title::after, .works__title::after, .price__title::after {
     position: absolute;
     bottom: 3px;
     left: 0;
@@ -471,7 +471,7 @@ img {
     height: 3px;
     background: #000000; }
 
-.about__subtitle, .services__subtitle, .works__subtitle, .works__type {
+.about__subtitle, .services__subtitle, .works__subtitle, .works__type, .price__subtitle {
   color: #8B8B8B;
   font-family: "Noto Sans JP", "sans-serif";
   margin-top: 13px;
@@ -538,18 +538,28 @@ img {
 /*================================================================
 #about
 ================================================================*/
-.about {
-  background-color: #F5F5F5;
-  height: auto;
-  padding: 0 120px 0 180px; }
-  .about__container {
-    max-width: 1140px;
-    position: relative; }
-  .about__background {
-    background: url("../images/pc/about-logo.png") center center/cover;
-    margin-top: 29px;
-    width: 560px;
-    height: 317px;
+.about__container {
+  max-width: 1140px;
+  position: relative; }
+
+.about__background {
+  background: url("../images/pc/about-logo.png") center center/cover;
+  margin-top: 29px;
+  width: 560px;
+  height: 317px;
+  position: absolute;
+  right: 0px; }
+
+.about__box {
+  display: flex;
+  justify-content: space-between; }
+
+.about__left {
+  margin-top: 101px; }
+
+.about__title span {
+  position: relative; }
+  .about__title span::after {
     position: absolute;
     bottom: 3px;
     left: 0;
