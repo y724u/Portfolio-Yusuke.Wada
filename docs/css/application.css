@@ -477,7 +477,7 @@ img {
 #mv
 ================================================================*/
 .mv {
-  background: url(https://raw.githubusercontent.com/y724u/Portfolio-Yusuke.Wada/master/docs/images/pc/mv.png) center right/cover;
+  background: url("../images/pc/mv.png") center right/cover;
   color: #000000;
   padding: 35px 120px 96px 120px; }
   .mv__menu {
@@ -533,7 +533,7 @@ img {
     max-width: 1140px;
     position: relative; }
   .about__background {
-    background: url(https://raw.githubusercontent.com/y724u/Portfolio-Yusuke.Wada/master/docs/images/pc/about-logo.png) center center/cover;
+    background: url("../images/pc/about-logo.png") center center/cover;
     margin-top: 29px;
     width: 560px;
     height: 317px;
@@ -599,11 +599,11 @@ img {
         line-height: 27px;
         margin-top: 331px; }
   .services__item01 {
-    background: url(../images/pc/services1.png) center center/cover; }
+    background: url("../images/pc/services1.png") center center/cover; }
   .services__item02 {
-    background: url(../images/pc/services2.png) center center/cover; }
+    background: url("../images/pc/services2.png") center center/cover; }
   .services__item03 {
-    background: url(../images/pc/services3.png) center center/cover; }
+    background: url("../images/pc/services3.png") center center/cover; }
   .services__skills {
     display: flex;
     width: 755px;
