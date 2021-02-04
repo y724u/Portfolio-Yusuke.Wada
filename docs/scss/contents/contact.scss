@@ -2,3 +2,58 @@
 /*================================================================
 #contact
 ================================================================*/
+.contact {
+  background-color: $key-color-ash;
+  padding-left: 180px;
+  height: auto;
+
+  &__container {
+    background: #212121;
+    padding: 66px 0 50px 166px;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    @extend %title;
+    color: $key-color-white;
+
+    &::after {
+      background: $key-color-white;
+    }
+  }
+
+  &__subtitle {
+    @extend %title-sub;
+  }
+
+  &__address {
+    padding: 29px 230px 0 0;
+
+    p {
+      @extend %title-sub;
+      color: $key-color-white;
+      letter-spacing: .08em;
+    }
+
+    a {
+      @extend %title;
+      color: $key-color-white;
+      font-size: 30px;
+      line-height: 41px;
+      letter-spacing: .08em;
+      margin-top: 11px;
+
+      &::after {
+        background: $key-color-white;
+      }
+    }
+  }
+
+  &__mail {
+    margin-top: 51px;
+  }
+}

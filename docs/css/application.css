@@ -455,14 +455,14 @@ img {
   max-width: 1200px;
   margin: 0 auto; }
 
-.about__title, .services__title, .works__title, .price__title {
+.about__title, .services__title, .works__title, .price__title, .contact__title, .contact__address a {
   color: #000000;
   display: inline-block;
   font-size: 40px;
   letter-spacing: .06em;
   line-height: 55px;
   position: relative; }
-  .about__title::after, .services__title::after, .works__title::after, .price__title::after {
+  .about__title::after, .services__title::after, .works__title::after, .price__title::after, .contact__title::after, .contact__address a::after {
     position: absolute;
     bottom: 3px;
     left: 0;
@@ -471,7 +471,7 @@ img {
     height: 3px;
     background: #000000; }
 
-.about__subtitle, .services__subtitle, .works__subtitle, .works__type, .price__subtitle {
+.about__subtitle, .services__subtitle, .works__subtitle, .works__type, .price__subtitle, .contact__subtitle, .contact__address p {
   color: #8B8B8B;
   font-family: "Noto Sans JP", "sans-serif";
   margin-top: 13px;
@@ -739,8 +739,58 @@ img {
 /*================================================================
 #contact
 ================================================================*/
+.contact {
+  background-color: #F5F5F5;
+  padding-left: 180px;
+  height: auto; }
+  .contact__container {
+    background: #212121;
+    padding: 66px 0 50px 166px; }
+  .contact__box {
+    display: flex;
+    justify-content: space-between; }
+  .contact__title {
+    color: #FFFFFF; }
+    .contact__title::after {
+      background: #FFFFFF; }
+  .contact__address {
+    padding: 29px 230px 0 0; }
+    .contact__address p {
+      color: #FFFFFF;
+      letter-spacing: .08em; }
+    .contact__address a {
+      color: #FFFFFF;
+      font-size: 30px;
+      line-height: 41px;
+      letter-spacing: .08em;
+      margin-top: 11px; }
+      .contact__address a::after {
+        background: #FFFFFF; }
+  .contact__mail {
+    margin-top: 51px; }
+
 /*================================================================
 #footer
 ================================================================*/
+.footer {
+  background-color: #F5F5F5;
+  padding-left: 180px;
+  height: auto; }
+  .footer__container {
+    background: #212121;
+    padding: 100px 0 50px 166px;
+    display: flex;
+    align-items: center; }
+    .footer__container img {
+      width: 22px;
+      height: 22px; }
+  .footer__at {
+    color: #FFFFFF;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.15em;
+    padding-right: 65px; }
+  .footer__facebook {
+    padding-left: 18px; }
 
 /*# sourceMappingURL=application.css.map */
