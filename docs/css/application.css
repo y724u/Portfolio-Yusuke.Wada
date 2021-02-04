@@ -739,9 +739,6 @@ img {
 /*================================================================
 #contact
 ================================================================*/
-/*================================================================
-#contact
-================================================================*/
 .contact {
   background-color: #F5F5F5;
   padding-left: 180px;
@@ -771,21 +768,29 @@ img {
         background: #FFFFFF; }
   .contact__mail {
     margin-top: 51px; }
-  .contact__footer {
+
+/*================================================================
+#footer
+================================================================*/
+.footer {
+  background-color: #F5F5F5;
+  padding-left: 180px;
+  height: auto; }
+  .footer__container {
+    background: #212121;
+    padding: 150px 0 50px 166px;
     display: flex;
-    margin-top: 150px;
-    height: 18px;
     align-items: center; }
-    .contact__footer img {
+    .footer__container img {
       width: 22px;
       height: 22px; }
-  .contact__at {
+  .footer__at {
     color: #FFFFFF;
     font-size: 13px;
     line-height: 18px;
     letter-spacing: 0.15em;
     padding-right: 65px; }
-  .contact__facebook {
+  .footer__facebook {
     padding-left: 18px; }
 
 /*# sourceMappingURL=application.css.map */
