@@ -673,19 +673,39 @@ img {
     height: 100vh;
     position: absolute;
     width: 100%;
-    cursor: pointer; }
+    cursor: pointer;
+    z-index: 0; }
   .works__modal {
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 890px;
+    cursor: pointer;
+    z-index: 100; }
+  .works__close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0%;
+    top: calc(20% - 48px);
+    cursor: pointer;
+    z-index: 200; }
+  .works__wrapper {
+    cursor: default;
+    overflow-y: scroll;
     background-color: #ffffff;
     font-size: 18px;
     height: 60%;
-    overflow-y: scroll;
     left: 50%;
     line-height: 32px;
     padding: 80px;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 890px; }
+    width: 890px;
+    z-index: 300; }
   .works__image {
     width: 730px;
     height: 480px; }
@@ -746,7 +766,7 @@ js-service
   width: 56px;
   height: 56px;
   position: absolute; }
-  .swiper-button-prev:after {
+  .swiper-button-prev::after {
     content: none; }
 
 .swiper-button-next {
