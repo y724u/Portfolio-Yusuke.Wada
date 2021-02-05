@@ -486,7 +486,7 @@ img {
   line-height: 30px;
   letter-spacing: .04em; }
 
-.works__detail {
+.works__detail, .works__explanation dd, .works__explanation dt {
   color: #424242;
   font-family: "Noto Sans JP", "sans-serif";
   font-size: 16px;
@@ -675,6 +675,7 @@ img {
     width: 100%;
     cursor: pointer; }
   .works__modal {
+    background-color: #ffffff;
     font-size: 18px;
     height: 60%;
     overflow-y: scroll;
@@ -684,8 +685,7 @@ img {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 890px;
-    background-color: #ffffff; }
+    width: 890px; }
   .works__image {
     width: 730px;
     height: 480px; }
@@ -695,11 +695,27 @@ img {
     letter-spacing: .1em;
     margin-top: 32px; }
   .works__subname {
-    margin-top: 20px;
+    font-size: 16px;
     line-height: 27px;
-    letter-spacing: .08em; }
+    letter-spacing: .1em;
+    margin-top: 7px; }
   .works__detail {
-    margin-top: 16px; }
+    margin: 16px 0 30px; }
+  .works__explanation {
+    display: flex;
+    align-items: center; }
+    .works__explanation + .works__explanation {
+      margin-top: 18px; }
+    .works__explanation dd {
+      color: #000000;
+      position: relative;
+      line-height: 24px; }
+    .works__explanation dt {
+      position: absolute;
+      left: 171px;
+      line-height: 24px; }
+      .works__explanation dt a {
+        border-bottom: 1px solid #424242; }
 
 /*================================================================
 js-service
