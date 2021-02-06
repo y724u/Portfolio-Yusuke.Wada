@@ -3,6 +3,13 @@
 /*================================================================
 #works
 ================================================================*/
+body.fixed {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
 .works {
   background-color: #FAFAFA;
   height: auto;
@@ -142,15 +149,15 @@ js-service
     position: fixed;
     top: 0;
     width: 100%;
-    // opacity: 0;
-    // visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
     transition: 0.8s;
     z-index: 100;
 
-    // &.show_modal {
-    //   opacity: 1;
-    //   visibility: visible;
-    // }
+    &.show_modal {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 }
 
