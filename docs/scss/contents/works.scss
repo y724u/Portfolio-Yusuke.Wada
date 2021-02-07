@@ -122,13 +122,6 @@ body.fixed {
 
     dd {
       @extend %modal-letter;
-      color: $key-color-black;
-      position: relative;
-      line-height: 24px;
-    }
-
-    dt {
-      @extend %modal-letter;
       position: absolute;
       left: 171px;
       line-height: 24px;
@@ -136,6 +129,13 @@ body.fixed {
       a {
         border-bottom: 1px solid $font-black;
       }
+    }
+
+    dt {
+      @extend %modal-letter;
+      color: $key-color-black;
+      position: relative;
+      line-height: 24px;    
     }
   }
 }

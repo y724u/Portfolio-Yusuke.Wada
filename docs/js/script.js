@@ -13,7 +13,7 @@ $(function () {
   let scrollPosition;
   $('.js-modalOpen').on('click', function () {
     const target = $(this).data('target');
-    const modal = document.getElementById(target);
+    const modal = $('#' + target);
     scrollPosition = $(window).scrollTop();
     $(modal).addClass('show_modal');
     $('body').addClass('fixed').css({ 'top': -scrollPosition });
