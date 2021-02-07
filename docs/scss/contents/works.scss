@@ -116,7 +116,7 @@ body.fixed {
     display: flex;
     align-items: center;
 
-    &+& {
+    & + & {
       margin-top: 18px;
     }
 

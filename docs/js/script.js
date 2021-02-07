@@ -30,6 +30,7 @@ $(function () {
     direction: 'horizontal',
     slidesPerView: 3,
     spaceBetween: 60,
+    loop: true,
     // // レスポンシブブレーポイント（画面幅による設定）
     breakpoints: {
       // 画面幅が 640px 以上の場合（window width >= 640px）
