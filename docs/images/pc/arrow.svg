@@ -1,10 +1,1 @@
-<svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<path d="M26.5 52.2639C40.729 52.2639 52.2639 40.729 52.2639 26.5C52.2639 12.271 40.729 0.736115 26.5 0.736115C12.271 0.736115 0.736084 12.271 0.736084 26.5C0.736084 40.729 12.271 52.2639 26.5 52.2639Z" stroke="#8B8B8B"/>
-<rect x="23.5997" y="19.8308" width="8.83333" height="14.7222" fill="url(#pattern0)"/>
-<defs>
-<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0" transform="scale(0.166667 0.1)"/>
-</pattern>
-<image id="image0" width="6" height="10" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAKCAYAAACXDi8zAAAAT0lEQVQImXXPsQmAQAwF0IeghY2z2jqBtSu4ga2NnbPcFIqQQuL5u/DgJ4GCFe0zvLPgwoYu4xy4o884BR4YMo6BZ5OllmpVdfnvud8HcQNx4xMWVjJNNAAAAABJRU5ErkJggg=="/>
-</defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.97 16.97"><defs><style>.cls-1,.cls-2{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5px;}.cls-1{stroke:#424242;}.cls-2{stroke:#8b8b8b;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g id="Layer_2-2" data-name="Layer 2"><g id="Capa_1" data-name="Capa 1"><polyline class="cls-1" points="7.32 5.45 10.5 8.63 7.32 11.8"/></g></g><circle class="cls-2" cx="8.48" cy="8.48" r="8.23"/></g></g></svg>
