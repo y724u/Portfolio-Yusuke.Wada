@@ -35,6 +35,10 @@
     color: $key-color-white;
     margin-top: 51px;
 
+    @include mq(sm) {
+      display: none;
+    }
+
     div {
       padding: 40px 40px 0 31px;
       height: 568px;

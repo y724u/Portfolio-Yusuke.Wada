@@ -9,6 +9,10 @@
   height: auto;
 
   @include mq(sm) {
+    padding: 0;
+  }
+
+  @include mq(sm) {
     overflow: hidden;
   }
 
@@ -17,6 +21,9 @@
     padding: 100px 0 50px 166px;
     display: flex;
     align-items: center;
+    @include mq(sm) {
+      padding: 0;
+    }
 
 
     a {

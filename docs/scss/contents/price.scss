@@ -8,6 +8,10 @@
   padding: 159px 120px 160px 180px;
 
   @include mq(sm) {
+    padding: 0;
+  }
+
+  @include mq(sm) {
     overflow: hidden;
   }
 
