@@ -633,14 +633,18 @@ img {
 .about__background {
   background: url("../images/pc/about-logo.png") center center/cover;
   margin-top: 29px;
-  width: 560px;
-  height: 317px;
   position: absolute;
-  right: 0px; }
+  right: 0px;
+  width: 560px;
+  height: 317px; }
 
 .about__box {
   display: flex;
   justify-content: space-between; }
+  @media screen and (max-width: 1230px) {
+    .about__box {
+      display: block;
+      padding-top: 101px; } }
   @media screen and (max-width: 767px) {
     .about__box {
       display: block; } }

@@ -19,15 +19,20 @@
   &__background {
     background: url("../images/pc/about-logo.png") center center / cover;
     margin-top: 29px;
-    width: 560px;
-    height: 317px;
     position: absolute;
     right: 0px;
+    width: 560px;
+    height: 317px;
   }
 
   &__box {
     display: flex;
     justify-content: space-between;
+
+    @include mq(lg) {
+      display: block;
+      padding-top: 101px;
+    }
 
     @include mq(sm) {
       display: block;
