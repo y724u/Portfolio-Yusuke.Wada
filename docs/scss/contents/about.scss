@@ -5,8 +5,9 @@
 ================================================================*/
 .about {
   @extend %section;
+
   @include mq(sm) {
-    overflow: hidden;
+    padding: 92px 40px 92px;
   }
 
   &__container {
@@ -18,19 +19,32 @@
   &__background {
     background: url("../images/pc/about-logo.png") center center / cover;
     margin-top: 29px;
-    width: 560px;
-    height: 317px;
     position: absolute;
     right: 0px;
+    width: 560px;
+    height: 317px;
   }
 
   &__box {
     display: flex;
     justify-content: space-between;
+
+    @include mq(lg) {
+      display: block;
+      padding-top: 101px;
+    }
+
+    @include mq(sm) {
+      display: block;
+    }
   }
 
   &__left {
     margin-top: 101px;
+
+    @include mq(sm) {
+      margin-top: 0;
+    }
   }
 
   &__title {
@@ -49,21 +63,51 @@
         background: $key-color-black;
       }
     }
+
+    @include mq(sm) {
+      font-size: 25px;
+      letter-spacing: .03%;
+      line-height: 34px;
+
+      &::after {
+        height: 1px;
+      }
+
+      span {
+        &::after {
+          height: 1px;
+        }
+      }
+    }
   }
 
   &__subtitle {
     @extend %title-sub;
+
+    @include mq(sm) {
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 0.06em;
+      margin-top: 11px;
+    }
   }
 
   &__right {
+    line-height: 38px;
     margin-top: 169px;
-    width: auto;
     max-width: 658px;
+    width: auto;
+
+    @include mq(sm) {
+      font-size: 12px;
+      line-height: 26px;
+      letter-spacing: .04em;
+      margin-top: 23px;
+    }
   }
 
   &__description {
     font-family: $font-family-noto;
-    line-height: 38px;
 
     & + & {
       margin-top: 24px;
