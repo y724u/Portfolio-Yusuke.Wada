@@ -9,6 +9,11 @@ $(function () {
     return false;
   });
 
+  // <!-- ハンバーガーメニュー -->
+  $('.js-hamburger').on('click', function () {
+    $('.js-hamburger').toggleClass('active')
+  });
+
   // <!-- サービスシステム開発モーダル -->
   let scrollPosition;
   $('.js-modalOpen').on('click', function () {
