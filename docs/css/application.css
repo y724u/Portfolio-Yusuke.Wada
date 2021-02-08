@@ -543,13 +543,13 @@ img {
     display: inline-block; }
     @media screen and (max-width: 767px) {
       .mv__link::after {
-        position: absolute;
+        background: #000000;
         bottom: 10px;
         left: 0;
         content: '';
         width: 100%;
         height: 5px;
-        background: #000000; } }
+        position: absolute; } }
   .mv__title {
     font-size: 76px;
     margin-top: 338px;
@@ -562,29 +562,29 @@ img {
     letter-spacing: .11em;
     width: 700px; }
   .mv__hamburger {
+    cursor: pointer;
     display: none;
     height: 60px;
-    width: 60px;
-    position: fixed;
     top: 55px;
     right: 0;
-    cursor: pointer;
+    width: 60px;
+    position: fixed;
     z-index: 300; }
     .mv__hamburger span {
-      height: 7px;
-      width: 60px;
       background: #000000;
-      position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      transition: 1s; }
+      transition: 1s;
+      height: 7px;
+      width: 60px;
+      position: absolute; }
     .mv__hamburger .mv__line01 {
       transform: translate(-50%, -23px); }
     .mv__hamburger.active .mv__line01 {
+      background: #222222;
       transform: rotate(45deg) translate(-50%, 0);
-      transform-origin: 0% 50%;
-      background: #222222; }
+      transform-origin: 0% 50%; }
     .mv__hamburger.active .mv__line02 {
       transform: rotate(-45deg) translate(-50%, 0);
       transform-origin: 0 50%;

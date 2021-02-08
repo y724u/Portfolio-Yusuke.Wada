@@ -76,13 +76,13 @@
 
     @include mq(sm) {
       &::after {
-        position: absolute;
+        background: $key-color-black;
         bottom: 10px;
         left: 0;
         content: '';
         width: 100%;
         height: 5px;
-        background: $key-color-black;
+        position: absolute;
       }
     }
   }
@@ -103,40 +103,42 @@
   }
 
   &__hamburger {
+    cursor: pointer;
     display: none;
     height: 60px;
-    width: 60px;
-    position: fixed;
     top: 55px;
     right: 0;
-    cursor: pointer;
+    width: 60px;
+    position: fixed;
     z-index: 300;
 
     span {
-      height: 7px;
-      width: 60px;
       background: $key-color-black;
-      position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       transition: 1s;
+      height: 7px;
+      width: 60px;
+      position: absolute;
     }
 
     .mv__line01 {
       transform: translate(-50%, -23px);
     }
 
-    &.active .mv__line01 {
-      transform: rotate(45deg) translate(-50%, 0);
-      transform-origin: 0% 50%;
-      background: #222222;
-    }
+    &.active {
+      .mv__line01 {
+        background: #222222;
+        transform: rotate(45deg) translate(-50%, 0);
+        transform-origin: 0% 50%;
+      }
 
-    &.active .mv__line02 {
-      transform: rotate(-45deg) translate(-50%, 0);
-      transform-origin: 0 50%;
-      background: #222222;
+      .mv__line02 {
+        transform: rotate(-45deg) translate(-50%, 0);
+        transform-origin: 0 50%;
+        background: #222222;
+      }
     }
 
     @include mq(sm) {
