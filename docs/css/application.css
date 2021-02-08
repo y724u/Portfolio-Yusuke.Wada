@@ -500,6 +500,9 @@ img {
   background: url("../images/pc/mv.png") center right/cover;
   color: #000000;
   padding: 35px 120px 96px 120px; }
+  @media screen and (max-width: 767px) {
+    .mv {
+      padding: 60px 40px 35px 40px; } }
   .mv__menu {
     display: flex;
     justify-content: space-between;
@@ -682,6 +685,10 @@ img {
     display: flex;
     width: 755px;
     margin: 44px auto 0; }
+    @media screen and (max-width: 767px) {
+      .services__skills {
+        display: block;
+        width: 100%; } }
   .services__other {
     color: #000000;
     display: inline-block;
@@ -895,9 +902,17 @@ body.fixed {
   .contact__container {
     background: #212121;
     padding: 66px 0 50px 166px; }
+    @media screen and (max-width: 767px) {
+      .contact__container {
+        padding: 66px 0 10px 124px; } }
   .contact__box {
     display: flex;
     justify-content: space-between; }
+    @media screen and (max-width: 767px) {
+      .contact__box {
+        display: block; } }
+  .contact__left {
+    width: 250px; }
   .contact__title {
     color: #FFFFFF; }
     .contact__title::after {

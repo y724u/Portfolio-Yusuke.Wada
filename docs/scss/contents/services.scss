@@ -75,6 +75,11 @@
     display: flex;
     width: 755px;
     margin: 44px auto 0;
+
+    @include mq(sm) {
+      display: block;
+      width: 100%;
+    }
   }
 
   &__other {
