@@ -862,7 +862,8 @@ body.fixed {
       letter-spacing: .08em;
       margin-top: 11px; }
       .contact__address a::after {
-        background: #FFFFFF; }
+        background: #FFFFFF;
+        height: 2px; }
   .contact__mail {
     margin-top: 51px; }
 
@@ -878,16 +879,16 @@ body.fixed {
     padding: 100px 0 50px 166px;
     display: flex;
     align-items: center; }
-    .footer__container img {
-      width: 22px;
-      height: 22px; }
+    .footer__container a {
+      padding-left: 18px; }
+      .footer__container a img {
+        width: 22px;
+        height: 22px; }
   .footer__at {
     color: #FFFFFF;
     font-size: 13px;
     line-height: 18px;
     letter-spacing: 0.15em;
-    padding-right: 65px; }
-  .footer__facebook {
-    padding-left: 18px; }
+    padding-right: 50px; }
 
 /*# sourceMappingURL=application.css.map */
