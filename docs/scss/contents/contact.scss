@@ -7,9 +7,13 @@
   background-color: $key-color-ash;
   padding-left: 180px;
   height: auto;
+  @include mq(sm) {
+    padding: 0;
+  }
 
   @include mq(sm) {
     overflow: hidden;
+    padding: 0;
   }
 
   &__container {
@@ -17,7 +21,7 @@
     padding: 66px 0 50px 166px;
 
     @include mq(sm) {
-      padding: 66px 0 10px 124px;
+      padding: 0;
     }
   }
 
@@ -49,6 +53,9 @@
 
   &__address {
     padding: 29px 230px 0 0;
+    @include mq(sm) {
+      padding: 0;
+    }
 
     p {
       @extend %title-sub;

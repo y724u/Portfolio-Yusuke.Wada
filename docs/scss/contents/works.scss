@@ -16,6 +16,10 @@
   &__container {
     position: relative;
     margin-left: 180px;
+
+    @include mq(sm) {
+      margin-left: 0;
+    }
   }
 
   &__title {
@@ -52,6 +56,10 @@
     &.show_modal {
       opacity: 1;
       visibility: visible;
+    }
+
+    @include mq(sm) {
+      display: none;
     }
   }
 
@@ -159,6 +167,10 @@
   &-container {
     height: 395px;
     margin-top: 57px;
+
+    @include mq(sm) {
+      display: none;
+    }
   }
 
   &-inner {
