@@ -10,23 +10,24 @@ $(function () {
   });
 
   // <!-- ハンバーガーメニュー -->
-  $('.js-hamburger').on('click', function () {
-    $('.js-hamburger').toggleClass('active')
-  });
-
-  // <!-- ハンバーガーメニュースクールロールストップ -->
   let state = false;
-  let scrollpos;
-  $('.js-hamburger').on('click', function () {
+  let scrollStops;
+  $('.js-open').on('click', function () {
+    $('.js-open').toggleClass('active');
     if (state == false) {
-      scrollpos = $(window).scrollTop();
-      $('body').addClass('fixed').css({ 'top': -scrollpos });
+      scrollStops = $(window).scrollTop();
+      $('body').addClass('fixed').css({ 'top': scrollStops });
       state = true;
     } else {
       $('body').removeClass('fixed').css({ 'top': 0 });
-      window.scrollTo(0, scrollpos);
+      window.scrollTo(0, scrollStops);
       state = false;
     }
+  });
+  // <!-- ハンバーガーメニューページ内リンク -->
+  $('.js-link').on('click', function () {
+    $('.js-open').removeClass('active');
+    $('body').removeClass('fixed');
   });
 
   // <!-- サービスシステム開発モーダル -->
