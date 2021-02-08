@@ -7,6 +7,10 @@
   @extend %section;
   padding: 159px 120px 160px 180px;
 
+  @include mq(sm) {
+    overflow: hidden;
+  }
+
   &__container {
     @extend %container;
     max-width: 1140px;

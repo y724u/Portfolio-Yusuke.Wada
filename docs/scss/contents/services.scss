@@ -8,6 +8,10 @@
   height: auto;
   padding: 114px 120px 112px 120px;
 
+  @include mq(sm) {
+    overflow: hidden;
+  }
+
   &__container {
     @extend %container;
   }

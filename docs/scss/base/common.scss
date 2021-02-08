@@ -21,6 +21,13 @@ body {
   font-family: $font-family-alata;
 }
 
+body.fixed {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
 img {
   width: 100%;
 }

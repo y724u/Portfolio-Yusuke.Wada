@@ -3,14 +3,12 @@
 /*================================================================
 #works
 ================================================================*/
-body.fixed {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0;
-}
 
 .works {
+  @include mq(sm) {
+    overflow: hidden;
+  }
+
   background-color: #FAFAFA;
   height: auto;
   padding: 128px 0px 125px 0px;

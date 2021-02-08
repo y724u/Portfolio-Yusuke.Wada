@@ -8,6 +8,10 @@
   padding-left: 180px;
   height: auto;
 
+  @include mq(sm) {
+    overflow: hidden;
+  }
+
   &__container {
     background: #212121;
     padding: 100px 0 50px 166px;

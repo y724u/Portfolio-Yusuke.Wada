@@ -443,6 +443,12 @@ body {
   letter-spacing: 0.08em;
   font-family: "Alata", "sans-serif"; }
 
+body.fixed {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0; }
+
 img {
   width: 100%; }
 
@@ -600,6 +606,10 @@ img {
 /*================================================================
 #about
 ================================================================*/
+@media screen and (max-width: 767px) {
+  .about {
+    overflow: hidden; } }
+
 .about__container {
   max-width: 1140px;
   position: relative; }
@@ -648,6 +658,9 @@ img {
   background-color: #F5F5F5;
   height: auto;
   padding: 114px 120px 112px 120px; }
+  @media screen and (max-width: 767px) {
+    .services {
+      overflow: hidden; } }
   .services__box {
     text-align: right;
     margin-right: 56px; }
@@ -714,16 +727,13 @@ img {
 /*================================================================
 #works
 ================================================================*/
-body.fixed {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0; }
-
 .works {
   background-color: #FAFAFA;
   height: auto;
   padding: 128px 0px 125px 0px; }
+  @media screen and (max-width: 767px) {
+    .works {
+      overflow: hidden; } }
   .works__container {
     position: relative;
     margin-left: 180px; }
@@ -854,6 +864,9 @@ body.fixed {
 ================================================================*/
 .price {
   padding: 159px 120px 160px 180px; }
+  @media screen and (max-width: 767px) {
+    .price {
+      overflow: hidden; } }
   .price__container {
     max-width: 1140px; }
   .price__box {
@@ -899,6 +912,9 @@ body.fixed {
   background-color: #F5F5F5;
   padding-left: 180px;
   height: auto; }
+  @media screen and (max-width: 767px) {
+    .contact {
+      overflow: hidden; } }
   .contact__container {
     background: #212121;
     padding: 66px 0 50px 166px; }
@@ -941,6 +957,9 @@ body.fixed {
   background-color: #F5F5F5;
   padding-left: 180px;
   height: auto; }
+  @media screen and (max-width: 767px) {
+    .footer {
+      overflow: hidden; } }
   .footer__container {
     background: #212121;
     padding: 100px 0 50px 166px;

@@ -5,6 +5,9 @@
 ================================================================*/
 .about {
   @extend %section;
+  @include mq(sm) {
+    overflow: hidden;
+  }
 
   &__container {
     @extend %container;
