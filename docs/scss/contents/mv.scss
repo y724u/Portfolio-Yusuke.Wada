@@ -22,16 +22,51 @@
     width: 50px;
   }
 
+  &__nav {
+    @include mq(sm) {
+      background: $key-color-white;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.5s;
+      position: fixed;
+      padding: 109px 47px 40px 37px;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      margin: 0;
+      z-index: 100;
+
+      &.active {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
   &__list {
     display: flex;
     line-height: 28px;
+    letter-spacing: .06em;
+
+    @include mq(sm) {
+      display: block;
+      font-size: 70px;
+      line-height: 100px;
+      letter-spacing: .1em;
+    }
   }
 
   &__item {
-    letter-spacing: .06em;
-
     & + & {
       margin-left: 47px;
+    }
+
+    @include mq(sm) {
+
+      & + & {
+        margin: 54px 0;
+      }
     }
   }
 
@@ -39,22 +74,16 @@
     position: relative;
     display: inline-block;
 
-    &::after {
-      position: absolute;
-      bottom: 3px;
-      left: 0;
-      content: '';
-      width: 100%;
-      height: 2px;
-      background: $key-color-black;
-      transform: scale(0, 1);
-      transform-origin: right top;
-      transition: transform .5s;
-    }
-
-    &:hover::after {
-      transform-origin: left top;
-      transform: scale(1, 1);
+    @include mq(sm) {
+      &::after {
+        background: $key-color-black;
+        bottom: 10px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 5px;
+        position: absolute;
+      }
     }
   }
 
@@ -71,5 +100,50 @@
     line-height: 47px;
     letter-spacing: .11em;
     width: 700px;
+  }
+
+  &__hamburger {
+    cursor: pointer;
+    display: none;
+    height: 60px;
+    top: 55px;
+    right: 0;
+    width: 60px;
+    position: fixed;
+    z-index: 300;
+
+    span {
+      background: $key-color-black;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: 1s;
+      height: 7px;
+      width: 60px;
+      position: absolute;
+    }
+
+    .mv__line01 {
+      transform: translate(-50%, -23px);
+    }
+
+    &.active {
+      .mv__line01 {
+        background: #222222;
+        transform: rotate(45deg) translate(-50%, 0);
+        transform-origin: 0% 50%;
+      }
+
+      .mv__line02 {
+        transform: rotate(-45deg) translate(-50%, 0);
+        transform-origin: 0 50%;
+        background: #222222;
+      }
+    }
+
+    @include mq(sm) {
+      display: block;
+      right: 40px;
+    }
   }
 }

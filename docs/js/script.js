@@ -9,6 +9,27 @@ $(function () {
     return false;
   });
 
+  // <!-- ハンバーガーメニュー -->
+  let state = false;
+  let scrollStops;
+  $('.js-open').on('click', function () {
+    $('.js-open').toggleClass('active');
+    if (state == false) {
+      scrollStops = $(window).scrollTop();
+      $('body').addClass('fixed').css({ 'top': scrollStops });
+      state = true;
+    } else {
+      $('body').removeClass('fixed').css({ 'top': 0 });
+      window.scrollTo(0, scrollStops);
+      state = false;
+    }
+  });
+  // <!-- ハンバーガーメニューページ内リンク -->
+  $('.js-link').on('click', function () {
+    $('.js-open').removeClass('active');
+    $('body').removeClass('fixed');
+  });
+
   // <!-- サービスシステム開発モーダル -->
   let scrollPosition;
   $('.js-modalOpen').on('click', function () {
