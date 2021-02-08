@@ -508,7 +508,7 @@ img {
     width: 50px; }
   @media screen and (max-width: 767px) {
     .mv__nav {
-      background: rgba(0, 0, 0, 0.8);
+      background: #FFFFFF;
       opacity: 0;
       visibility: hidden;
       transition: 0.5s;
@@ -524,28 +524,33 @@ img {
         visibility: visible; } }
   .mv__list {
     display: flex;
-    line-height: 28px; }
-  .mv__item {
+    line-height: 28px;
     letter-spacing: .06em; }
-    .mv__item + .mv__item {
-      margin-left: 47px; }
+    @media screen and (max-width: 767px) {
+      .mv__list {
+        display: block;
+        font-size: 70px;
+        line-height: 97px;
+        letter-spacing: .1em; } }
+  .mv__item + .mv__item {
+    margin-left: 47px; }
+  @media screen and (max-width: 767px) {
+    .mv__item {
+      margin-left: 37px; }
+      .mv__item + .mv__item {
+        margin-left: 37px; } }
   .mv__link {
     position: relative;
     display: inline-block; }
-    .mv__link::after {
-      position: absolute;
-      bottom: 3px;
-      left: 0;
-      content: '';
-      width: 100%;
-      height: 2px;
-      background: #000000;
-      transform: scale(0, 1);
-      transform-origin: right top;
-      transition: transform .5s; }
-    .mv__link:hover::after {
-      transform-origin: left top;
-      transform: scale(1, 1); }
+    @media screen and (max-width: 767px) {
+      .mv__link::after {
+        position: absolute;
+        bottom: 3px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 3px;
+        background: #000000; } }
   .mv__title {
     font-size: 76px;
     margin-top: 338px;

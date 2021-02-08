@@ -14,6 +14,21 @@ $(function () {
     $('.js-hamburger').toggleClass('active')
   });
 
+  // <!-- ハンバーガーメニュースクールロールストップ -->
+  let state = false;
+  let scrollpos;
+  $('.js-hamburger').on('click', function () {
+    if (state == false) {
+      scrollpos = $(window).scrollTop();
+      $('body').addClass('fixed').css({ 'top': -scrollpos });
+      state = true;
+    } else {
+      $('body').removeClass('fixed').css({ 'top': 0 });
+      window.scrollTo(0, scrollpos);
+      state = false;
+    }
+  });
+
   // <!-- サービスシステム開発モーダル -->
   let scrollPosition;
   $('.js-modalOpen').on('click', function () {
