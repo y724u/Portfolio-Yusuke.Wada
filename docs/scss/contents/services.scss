@@ -82,19 +82,20 @@
         }
 
         span {
-          display: inline-block;
+          display: block;
           font-size: 20px;
           font-family: $font-family-noto;
           font-weight: 500;
           line-height: 29px;
           letter-spacing: .04em;
-          padding-left: 4px;
           margin-top: 10px;
 
           @include mq(sm) {
+            display: inline;
             font-size: 12px;
             line-height: 16px;
             letter-spacing: .02em;
+            padding-left: 4px;
           }
         }
       }
