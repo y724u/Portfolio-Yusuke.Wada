@@ -580,6 +580,10 @@ img {
     letter-spacing: .11em;
     width: 700px;
     margin-top: 15px; }
+    @media screen and (max-width: 1230px) {
+      .mv__description {
+        width: 100%;
+        word-wrap: break-word; } }
     @media screen and (max-width: 767px) {
       .mv__description {
         font-size: 16px;
@@ -792,7 +796,8 @@ img {
     word-wrap: break-word; }
     @media screen and (max-width: 1230px) {
       .services__skills {
-        display: block; } }
+        width: 100%;
+        word-wrap: break-word; } }
     @media screen and (max-width: 767px) {
       .services__skills {
         display: block;
@@ -847,9 +852,6 @@ img {
   background-color: #FAFAFA;
   height: auto;
   padding: 128px 0px 125px 0px; }
-  @media screen and (max-width: 767px) {
-    .works {
-      overflow: hidden; } }
   .works__container {
     position: relative;
     margin-left: 180px; }
@@ -874,9 +876,6 @@ img {
     .works__window.show_modal {
       opacity: 1;
       visibility: visible; }
-    @media screen and (max-width: 767px) {
-      .works__window {
-        display: none; } }
   .works__bg {
     background: rgba(0, 0, 0, 0.8);
     height: 100vh;
@@ -949,9 +948,6 @@ img {
 .swiper-container {
   height: 395px;
   margin-top: 57px; }
-  @media screen and (max-width: 767px) {
-    .swiper-container {
-      display: none; } }
 
 .swiper-inner {
   overflow: hidden;
@@ -1056,6 +1052,9 @@ img {
   .contact__box {
     display: flex;
     justify-content: space-between; }
+    @media screen and (max-width: 1230px) {
+      .contact__box {
+        display: block; } }
     @media screen and (max-width: 767px) {
       .contact__box {
         display: block; } }
@@ -1094,10 +1093,7 @@ img {
   height: auto; }
   @media screen and (max-width: 767px) {
     .footer {
-      padding: 0; } }
-  @media screen and (max-width: 767px) {
-    .footer {
-      overflow: hidden; } }
+      padding-left: 0; } }
   .footer__container {
     background: #212121;
     padding: 100px 0 50px 166px;

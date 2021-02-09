@@ -9,11 +9,7 @@
   height: auto;
 
   @include mq(sm) {
-    padding: 0;
-  }
-
-  @include mq(sm) {
-    overflow: hidden;
+    padding-left: 0;
   }
 
   &__container {

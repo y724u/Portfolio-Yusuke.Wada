@@ -134,7 +134,8 @@
     word-wrap: break-word;
 
     @include mq(lg) {
-      display: block;
+      width: 100%;
+      word-wrap: break-word;
     }
 
     @include mq(sm) {
