@@ -5,34 +5,58 @@
 ================================================================*/
 
 .works {
-  @include mq(sm) {
-    overflow: hidden;
-  }
-
   background-color: #FAFAFA;
   height: auto;
   padding: 128px 0px 125px 0px;
+
+  @include mq(sm) {
+    padding: 37px 40px 47px 0px;
+  }
 
   &__container {
     position: relative;
     margin-left: 180px;
 
     @include mq(sm) {
-      margin-left: 0;
+      margin-left: 40px;
     }
   }
 
   &__title {
     @extend %title;
+
+    @include mq(sm) {
+      font-size: 25px;
+      letter-spacing: .03%;
+      line-height: 34px;
+
+      &::after {
+        height: 1px;
+      }
+    }
   }
 
   &__subtitle {
     @extend %title-sub;
+
+    @include mq(sm) {
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 0.06em;
+      margin-top: 11px;
+    }
   }
 
   &__name {
     @extend %small-letters;
     margin-top: 30px;
+
+    @include mq(sm) {
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: .2em;
+      margin-top: 14px;
+    }
   }
 
   &__type {
@@ -40,6 +64,13 @@
     margin-top: 6px;
     line-height: 27px;
     letter-spacing: .08em;
+
+    @include mq(sm) {
+      font-size: 12px;
+      line-height: 13px;
+      letter-spacing: .4em;
+      margin-top: 7px;
+    }
   }
 
   // <-- modal -->
@@ -57,10 +88,6 @@
       opacity: 1;
       visibility: visible;
     }
-
-    @include mq(sm) {
-      display: none;
-    }
   }
 
   &__bg {
@@ -73,45 +100,66 @@
   }
 
   &__modal {
+    cursor: pointer;
     height: 100%;
     left: 50%;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 890px;
-    cursor: pointer;
     z-index: 100;
+
+    @include mq(sm) {
+      width: 80%;
+    }
   }
 
   &__close {
+    cursor: pointer;
     width: 30px;
     height: 30px;
     position: absolute;
     right: 0%;
     top: calc(20% - 48px);
-    cursor: pointer;
     z-index: 200;
+
+    @include mq(sm) {
+      width: 20px;
+      height: 20px;
+      top: 20%;
+    }
   }
 
   &__wrapper {
     cursor: default;
-    overflow-y: scroll;
     background-color: #ffffff;
     font-size: 18px;
     height: 60%;
     left: 50%;
     line-height: 32px;
+    overflow-y: scroll;
     padding: 80px;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 890px;
     z-index: 300;
+
+    @include mq(sm) {
+      width: 100%;
+      height: 52%;
+      padding: 30px;
+    }
   }
 
   &__image {
     width: 730px;
     height: 480px;
+
+    @include mq(sm) {
+      width: 100%;
+      height: auto;
+    }
   }
 
   &__theme {
@@ -119,6 +167,13 @@
     line-height: 47px;
     letter-spacing: .1em;
     margin-top: 32px;
+
+    @include mq(sm) {
+      font-size: 20px;
+      line-height: 27px;
+      letter-spacing: .05em;
+      margin-top: 11px;
+    }
   }
 
   &__subname {
@@ -127,19 +182,46 @@
     line-height: 27px;
     letter-spacing: .1em;
     margin-top: 7px;
+
+    @include mq(sm) {
+      font-size: 12px;
+      line-height: 13px;
+      letter-spacing: .04em;
+      margin-top: 2px;
+    }
   }
 
   &__detail {
     @extend %modal-letter;
     margin: 16px 0 30px;
+
+    @include mq(sm) {
+      font-size: 12px;
+      line-height: 26px;
+      letter-spacing: .05em;
+      margin: 20px 0 20px;
+    }
   }
 
   &__explanation {
-    display: flex;
     align-items: center;
+    display: flex;
 
     & + & {
       margin-top: 18px;
+    }
+
+    dt {
+      @extend %modal-letter;
+      color: $key-color-black;
+      position: relative;
+      line-height: 24px;
+
+      @include mq(sm) {
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: .04em;
+      }
     }
 
     dd {
@@ -151,13 +233,13 @@
       a {
         border-bottom: 1px solid $font-black;
       }
-    }
 
-    dt {
-      @extend %modal-letter;
-      color: $key-color-black;
-      position: relative;
-      line-height: 24px;
+      @include mq(sm) {
+        font-size: 12px;
+        left: 114px;
+        line-height: 18px;
+        letter-spacing: .04em;
+      }
     }
   }
 }
@@ -169,7 +251,8 @@
     margin-top: 57px;
 
     @include mq(sm) {
-      display: none;
+      height: auto;
+      margin-top: 30px;
     }
   }
 
@@ -177,6 +260,11 @@
     overflow: hidden;
     width: 460px;
     height: 303px;
+
+    @include mq(sm) {
+      height: auto;
+      width: 100%;
+    }
   }
 
   &-slide {
@@ -196,6 +284,10 @@
     &::after {
       content: none;
     }
+
+    @include mq(sm) {
+      background: none;
+    }
   }
 
   &-button-next {
@@ -209,6 +301,14 @@
 
     &::after {
       content: none;
+    }
+
+    @include mq(sm) {
+      background-color: $key-color-white;
+      top: calc(50% + 18px);
+      right: -20px;
+      width: 37px;
+      height: 37px;
     }
   }
 }
