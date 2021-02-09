@@ -55,10 +55,16 @@ $(function () {
     // // レスポンシブブレーポイント（画面幅による設定）
     breakpoints: {
       // 画面幅が 640px 以上の場合（window width >= 640px）
-      640: {
+      0: {
         slidesPerView: 1,
-        spaceBetween: 30
+        spaceBetween: 30,
       },
+      // 画面幅が 1070px 以上の場合（window width >= 1070px）
+      890: {
+        slidesPerView: 1.5,
+        spaceBetween: 40,
+      },
+
       // 画面幅が 1070px 以上の場合（window width >= 1070px）
       1070: {
         slidesPerView: 2,
