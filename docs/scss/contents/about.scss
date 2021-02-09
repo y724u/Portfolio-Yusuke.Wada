@@ -7,7 +7,7 @@
   @extend %section;
 
   @include mq(sm) {
-    padding: 92px 40px 92px;
+    padding: 92px 40px 0;
   }
 
   &__container {
