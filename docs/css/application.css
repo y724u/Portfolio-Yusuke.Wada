@@ -492,7 +492,7 @@ img {
   line-height: 30px;
   letter-spacing: .04em; }
 
-.works__detail, .works__explanation dd, .works__explanation dt {
+.works__detail, .works__explanation dt, .works__explanation dd {
   color: #424242;
   font-family: "Noto Sans JP", "sans-serif";
   font-size: 16px;
@@ -854,13 +854,13 @@ img {
   padding: 128px 0px 125px 0px; }
   @media screen and (max-width: 767px) {
     .works {
-      padding: 37px 40px 47px 40px; } }
+      padding: 37px 40px 47px 0px; } }
   .works__container {
     position: relative;
     margin-left: 180px; }
     @media screen and (max-width: 767px) {
       .works__container {
-        margin-left: 0; } }
+        margin-left: 40px; } }
   @media screen and (max-width: 767px) {
     .works__title {
       font-size: 25px;
@@ -912,66 +912,112 @@ img {
     cursor: pointer;
     z-index: 0; }
   .works__modal {
+    cursor: pointer;
     height: 100%;
     left: 50%;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 890px;
-    cursor: pointer;
     z-index: 100; }
+    @media screen and (max-width: 767px) {
+      .works__modal {
+        width: 80%; } }
   .works__close {
+    cursor: pointer;
     width: 30px;
     height: 30px;
     position: absolute;
     right: 0%;
     top: calc(20% - 48px);
-    cursor: pointer;
     z-index: 200; }
+    @media screen and (max-width: 767px) {
+      .works__close {
+        width: 20px;
+        height: 20px;
+        top: 20%; } }
   .works__wrapper {
     cursor: default;
-    overflow-y: scroll;
     background-color: #ffffff;
     font-size: 18px;
     height: 60%;
     left: 50%;
     line-height: 32px;
+    overflow-y: scroll;
     padding: 80px;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 890px;
     z-index: 300; }
+    @media screen and (max-width: 767px) {
+      .works__wrapper {
+        width: 100%;
+        height: 52%;
+        padding: 30px; } }
   .works__image {
     width: 730px;
     height: 480px; }
+    @media screen and (max-width: 767px) {
+      .works__image {
+        width: 100%;
+        height: auto; } }
   .works__theme {
     font-size: 34px;
     line-height: 47px;
     letter-spacing: .1em;
     margin-top: 32px; }
+    @media screen and (max-width: 767px) {
+      .works__theme {
+        font-size: 20px;
+        line-height: 27px;
+        letter-spacing: .05em;
+        margin-top: 11px; } }
   .works__subname {
     font-size: 16px;
     line-height: 27px;
     letter-spacing: .1em;
     margin-top: 7px; }
+    @media screen and (max-width: 767px) {
+      .works__subname {
+        font-size: 12px;
+        line-height: 13px;
+        letter-spacing: .04em;
+        margin-top: 2px; } }
   .works__detail {
     margin: 16px 0 30px; }
+    @media screen and (max-width: 767px) {
+      .works__detail {
+        font-size: 12px;
+        line-height: 26px;
+        letter-spacing: .05em;
+        margin: 20px 0 20px; } }
   .works__explanation {
-    display: flex;
-    align-items: center; }
+    align-items: center;
+    display: flex; }
     .works__explanation + .works__explanation {
       margin-top: 18px; }
+    .works__explanation dt {
+      color: #000000;
+      position: relative;
+      line-height: 24px; }
+      @media screen and (max-width: 767px) {
+        .works__explanation dt {
+          font-size: 12px;
+          line-height: 18px;
+          letter-spacing: .04em; } }
     .works__explanation dd {
       position: absolute;
       left: 171px;
       line-height: 24px; }
       .works__explanation dd a {
         border-bottom: 1px solid #424242; }
-    .works__explanation dt {
-      color: #000000;
-      position: relative;
-      line-height: 24px; }
+      @media screen and (max-width: 767px) {
+        .works__explanation dd {
+          font-size: 12px;
+          left: 114px;
+          line-height: 18px;
+          letter-spacing: .04em; } }
 
 .swiper-container {
   height: 395px;
@@ -1021,7 +1067,7 @@ img {
   @media screen and (max-width: 767px) {
     .swiper-button-next {
       background-color: #FFFFFF;
-      top: 50%;
+      top: calc(50% + 18px);
       right: -20px;
       width: 37px;
       height: 37px; } }
