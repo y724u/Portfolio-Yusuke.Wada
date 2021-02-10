@@ -54,7 +54,7 @@
     margin: 13px 250px 0 0;
 
     @include mq(sm) {
-     margin: 32px 0 0;
+      margin: 32px 0 0;
     }
   }
 
@@ -65,7 +65,7 @@
 
     @include mq(sm) {
       height: 72px;
-     }
+    }
   }
 
   &__image {
@@ -75,7 +75,7 @@
 
     @include mq(sm) {
       display: none;
-     }
+    }
   }
 
   &__wrapper {
@@ -109,14 +109,14 @@
       ::after {
         bottom: -27px;
       }
-     }
+    }
   }
 
   &__detail {
     padding-right: 10px;
 
     @include mq(sm) {
-    padding-right: 0;
-     }
+      padding-right: 0;
+    }
   }
 }

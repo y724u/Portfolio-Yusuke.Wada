@@ -9,12 +9,7 @@
   height: auto;
 
   @include mq(sm) {
-    padding: 0;
-  }
-
-  @include mq(sm) {
-    overflow: hidden;
-    padding: 0;
+    padding-left: 40px;
   }
 
   &__container {
@@ -22,7 +17,7 @@
     padding: 66px 0 50px 166px;
 
     @include mq(sm) {
-      padding: 0;
+      padding: 16px 0 60px 54px;
     }
   }
 
@@ -50,22 +45,45 @@
     &::after {
       background: $key-color-white;
     }
+
+    @include mq(sm) {
+      font-size: 25px;
+      letter-spacing: .03%;
+      line-height: 34px;
+
+      &::after {
+        height: 1px;
+      }
+    }
   }
 
   &__subtitle {
     @extend %title-sub;
+
+    @include mq(sm) {
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 0.06em;
+      margin-top: 11px;
+    }
   }
 
   &__address {
     padding: 29px 230px 0 0;
     @include mq(sm) {
-      padding: 0;
+      padding: 29px 0 0;
     }
 
     p {
       @extend %title-sub;
       color: $key-color-white;
       letter-spacing: .08em;
+
+      @include mq(sm) {
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: .04em;
+      }
     }
 
     a {
@@ -80,10 +98,22 @@
         background: $key-color-white;
         height: 2px;
       }
+
+      @include mq(sm) {
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: .04em;
+        margin-top: 6px;
+
+        &::after {
+          bottom: 1px;
+          height: 1px;
+        }
+      }
     }
   }
 
   &__mail {
-    margin-top: 51px;
+    margin-top: 23px;
   }
 }
