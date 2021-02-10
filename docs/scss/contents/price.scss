@@ -8,11 +8,7 @@
   padding: 159px 120px 160px 180px;
 
   @include mq(sm) {
-    padding: 0;
-  }
-
-  @include mq(sm) {
-    overflow: hidden;
+    padding: 91px 40px 100px 40px;
   }
 
   &__container {
@@ -23,30 +19,63 @@
   &__box {
     text-align: right;
     margin-right: 56px;
+
+    @include mq(sm) {
+      text-align: left;
+    }
   }
 
   &__title {
     @extend %title;
+
+    @include mq(sm) {
+      font-size: 25px;
+      letter-spacing: .03%;
+      line-height: 34px;
+
+      &::after {
+        height: 1px;
+      }
+    }
   }
 
   &__subtitle {
     @extend %title-sub;
+
+    @include mq(sm) {
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: .06em;
+      margin-top: 11px;
+    }
   }
 
   &__list {
     margin: 13px 250px 0 0;
+
+    @include mq(sm) {
+      margin: 32px 0 0;
+    }
   }
 
   &__item {
     align-items: center;
     display: flex;
     height: 121px;
+
+    @include mq(sm) {
+      height: 72px;
+    }
   }
 
   &__image {
     width: 42px;
     height: 41px;
     margin-right: 33px;
+
+    @include mq(sm) {
+      display: none;
+    }
   }
 
   &__wrapper {
@@ -71,9 +100,23 @@
       width: 100%;
       height: 1px;
     }
+
+    @include mq(sm) {
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: .04em;
+
+      ::after {
+        bottom: -27px;
+      }
+    }
   }
 
   &__detail {
     padding-right: 10px;
+
+    @include mq(sm) {
+      padding-right: 0;
+    }
   }
 }
