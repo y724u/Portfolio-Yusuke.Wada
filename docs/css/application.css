@@ -1099,7 +1099,7 @@ img {
     .price__subtitle {
       font-size: 14px;
       line-height: 21px;
-      letter-spacing: 0.06em;
+      letter-spacing: .06em;
       margin-top: 11px; } }
   .price__list {
     margin: 13px 250px 0 0; }
