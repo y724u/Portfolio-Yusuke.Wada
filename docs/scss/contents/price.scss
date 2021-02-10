@@ -7,6 +7,10 @@
   @extend %section;
   padding: 159px 120px 160px 180px;
 
+  @include mq(lg) {
+    padding: 159px 60px 160px 90px;
+  }
+
   @include mq(sm) {
     padding: 91px 40px 100px 40px;
   }
@@ -52,6 +56,10 @@
 
   &__list {
     margin: 13px 250px 0 0;
+
+    @include mq(lg) {
+      margin: 32px 0 0;
+    }
 
     @include mq(sm) {
       margin: 32px 0 0;
