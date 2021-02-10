@@ -9,25 +9,30 @@
   height: auto;
 
   @include mq(sm) {
-    padding-left: 0;
+    padding-left: 40px;
   }
 
   &__container {
-    background: #212121;
-    padding: 100px 0 50px 166px;
-    display: flex;
     align-items: center;
-    @include mq(sm) {
-      padding: 0;
-    }
-
+    background: #212121;
+    display: flex;
+    padding: 100px 0 50px 166px;
 
     a {
       padding-left: 18px;
 
       img {
-        width: 22px;
-        height: 22px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    @include mq(sm) {
+      align-items: baseline;
+      padding: 0 0 31px 24px;
+
+      a {
+        padding-left: 21px;
       }
     }
   }
@@ -38,5 +43,12 @@
     line-height: 18px;
     letter-spacing: 0.15em;
     padding-right: 50px;
+
+    @include mq(sm) {
+      font-size: 8px;
+      line-height: 11px;
+      letter-spacing: .07em;
+      padding-right: 0px;
+    }
   }
 }
