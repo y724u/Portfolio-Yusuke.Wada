@@ -1168,11 +1168,7 @@ img {
   height: auto; }
   @media screen and (max-width: 767px) {
     .contact {
-      padding: 0; } }
-  @media screen and (max-width: 767px) {
-    .contact {
-      overflow: hidden;
-      padding: 0; } }
+      padding-left: 40px; } }
   .contact__container {
     background: #212121;
     padding: 66px 0 50px 166px; }
@@ -1194,14 +1190,32 @@ img {
     color: #FFFFFF; }
     .contact__title::after {
       background: #FFFFFF; }
+    @media screen and (max-width: 767px) {
+      .contact__title {
+        font-size: 25px;
+        letter-spacing: .03%;
+        line-height: 34px; }
+        .contact__title::after {
+          height: 1px; } }
+  @media screen and (max-width: 767px) {
+    .contact__subtitle {
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 0.06em;
+      margin-top: 11px; } }
   .contact__address {
     padding: 29px 230px 0 0; }
     @media screen and (max-width: 767px) {
       .contact__address {
-        padding: 0; } }
+        padding: 29px 0 0; } }
     .contact__address p {
       color: #FFFFFF;
       letter-spacing: .08em; }
+      @media screen and (max-width: 767px) {
+        .contact__address p {
+          font-size: 12px;
+          line-height: 18px;
+          letter-spacing: .04em; } }
     .contact__address a {
       color: #FFFFFF;
       font-size: 30px;
@@ -1211,8 +1225,17 @@ img {
       .contact__address a::after {
         background: #FFFFFF;
         height: 2px; }
+      @media screen and (max-width: 767px) {
+        .contact__address a {
+          font-size: 16px;
+          line-height: 22px;
+          letter-spacing: .04em;
+          margin-top: 6px; }
+          .contact__address a::after {
+            bottom: 1px;
+            height: 1px; } }
   .contact__mail {
-    margin-top: 51px; }
+    margin-top: 23px; }
 
 /*================================================================
 #footer
