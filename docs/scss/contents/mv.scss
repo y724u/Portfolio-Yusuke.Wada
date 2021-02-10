@@ -9,7 +9,7 @@
   padding: 35px 120px 96px 120px;
 
   @include mq(sm) {
-    padding: 60px 40px 35px 40px;
+    padding: 30px 5% 17px 5%;
   }
 
   &__container {
@@ -105,7 +105,7 @@
     @include mq(sm) {
       font-size: 47px;
       line-height: 65px;
-      letter-spacing: .14em;
+      letter-spacing: .27em;
       margin-top: 209px;
     }
   }
@@ -120,12 +120,13 @@
     @include mq(lg) {
       width: 100%;
       word-wrap: break-word;
+      margin-top: 6px;
     }
 
     @include mq(sm) {
       font-size: 16px;
       line-height: 28px;
-      letter-spacing: .06em;
+      letter-spacing: .11em;
       width: 100%;
     }
   }
@@ -134,7 +135,7 @@
     cursor: pointer;
     display: none;
     height: 60px;
-    top: 45px;
+    top: 20px;
     right: 0;
     width: 60px;
     position: fixed;
@@ -171,7 +172,8 @@
 
     @include mq(sm) {
       display: block;
-      right: 40px;
+      height: 43px;
+      right: 8px;
     }
   }
 }
