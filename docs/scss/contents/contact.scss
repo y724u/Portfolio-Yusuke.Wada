@@ -9,7 +9,7 @@
   height: auto;
 
   @include mq(sm) {
-    padding-left: 40px;
+    padding-left: 5%;
   }
 
   &__container {
@@ -17,7 +17,7 @@
     padding: 66px 0 50px 166px;
 
     @include mq(sm) {
-      padding: 16px 0 60px 27px;
+      padding: 33px 0 54px 5%;
     }
   }
 
@@ -48,7 +48,6 @@
 
     @include mq(sm) {
       font-size: 25px;
-      letter-spacing: .03%;
       line-height: 34px;
 
       &::after {
@@ -63,7 +62,6 @@
     @include mq(sm) {
       font-size: 14px;
       line-height: 21px;
-      letter-spacing: 0.06em;
       margin-top: 11px;
     }
   }
@@ -71,7 +69,7 @@
   &__address {
     padding: 29px 230px 0 0;
     @include mq(sm) {
-      padding: 29px 0 0;
+      padding: 20px 0 0;
     }
 
     p {
@@ -82,7 +80,6 @@
       @include mq(sm) {
         font-size: 12px;
         line-height: 18px;
-        letter-spacing: .04em;
       }
     }
 
@@ -91,7 +88,6 @@
       color: $key-color-white;
       font-size: 30px;
       line-height: 41px;
-      letter-spacing: .08em;
       margin-top: 11px;
 
       &::after {
@@ -102,8 +98,7 @@
       @include mq(sm) {
         font-size: 16px;
         line-height: 22px;
-        letter-spacing: .04em;
-        margin-top: 6px;
+        margin-top: 2px;
 
         &::after {
           bottom: 1px;
