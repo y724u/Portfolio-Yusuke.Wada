@@ -508,7 +508,7 @@ img {
   padding: 35px 120px 96px 120px; }
   @media screen and (max-width: 767px) {
     .mv {
-      padding: 30px 5% 17px 5%; } }
+      padding: 30px 5% 35px 5%; } }
   .mv__menu {
     display: flex;
     height: 28px;
@@ -630,7 +630,7 @@ img {
 ================================================================*/
 @media screen and (max-width: 767px) {
   .about {
-    padding: 92px 40px 0; } }
+    padding: 92px 5% 0; } }
 
 .about__container {
   max-width: 1140px;
@@ -649,8 +649,7 @@ img {
   justify-content: space-between; }
   @media screen and (max-width: 1230px) {
     .about__box {
-      display: block;
-      padding-top: 101px; } }
+      display: block; } }
   @media screen and (max-width: 767px) {
     .about__box {
       display: block; } }
@@ -675,7 +674,7 @@ img {
 @media screen and (max-width: 767px) {
   .about__title {
     font-size: 25px;
-    letter-spacing: .03%;
+    letter-spacing: .06%;
     line-height: 34px; }
     .about__title::after {
       height: 1px; }
@@ -686,7 +685,7 @@ img {
   .about__subtitle {
     font-size: 14px;
     line-height: 21px;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.12em;
     margin-top: 11px; } }
 
 .about__right {
@@ -698,13 +697,13 @@ img {
     .about__right {
       font-size: 12px;
       line-height: 26px;
-      letter-spacing: .04em;
+      letter-spacing: .03em;
       margin-top: 23px; } }
 
 .about__description {
   font-family: "Noto Sans JP", "sans-serif"; }
   .about__description + .about__description {
-    margin-top: 24px; }
+    margin-top: 20px; }
 
 /*================================================================
 #services
