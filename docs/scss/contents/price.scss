@@ -12,7 +12,7 @@
   }
 
   @include mq(sm) {
-    padding: 91px 40px 100px 40px;
+    padding: 85px 5% 100px 5%;
   }
 
   &__container {
@@ -34,7 +34,7 @@
 
     @include mq(sm) {
       font-size: 25px;
-      letter-spacing: .03%;
+      letter-spacing: .06%;
       line-height: 34px;
 
       &::after {
@@ -49,7 +49,7 @@
     @include mq(sm) {
       font-size: 14px;
       line-height: 21px;
-      letter-spacing: .06em;
+      letter-spacing: .12em;
       margin-top: 11px;
     }
   }
@@ -62,7 +62,7 @@
     }
 
     @include mq(sm) {
-      margin: 32px 0 0;
+      margin: 5px 0 0;
     }
   }
 
@@ -112,7 +112,6 @@
     @include mq(sm) {
       font-size: 12px;
       line-height: 18px;
-      letter-spacing: .04em;
 
       ::after {
         bottom: -27px;

@@ -1083,7 +1083,7 @@ img {
       padding: 159px 60px 160px 90px; } }
   @media screen and (max-width: 767px) {
     .price {
-      padding: 91px 40px 100px 40px; } }
+      padding: 85px 5% 100px 5%; } }
   .price__container {
     max-width: 1140px; }
   .price__box {
@@ -1095,7 +1095,7 @@ img {
   @media screen and (max-width: 767px) {
     .price__title {
       font-size: 25px;
-      letter-spacing: .03%;
+      letter-spacing: .06%;
       line-height: 34px; }
       .price__title::after {
         height: 1px; } }
@@ -1103,7 +1103,7 @@ img {
     .price__subtitle {
       font-size: 14px;
       line-height: 21px;
-      letter-spacing: .06em;
+      letter-spacing: .12em;
       margin-top: 11px; } }
   .price__list {
     margin: 13px 250px 0 0; }
@@ -1112,7 +1112,7 @@ img {
         margin: 32px 0 0; } }
     @media screen and (max-width: 767px) {
       .price__list {
-        margin: 32px 0 0; } }
+        margin: 5px 0 0; } }
   .price__item {
     align-items: center;
     display: flex;
@@ -1150,8 +1150,7 @@ img {
     @media screen and (max-width: 767px) {
       .price__wrapper {
         font-size: 12px;
-        line-height: 18px;
-        letter-spacing: .04em; }
+        line-height: 18px; }
         .price__wrapper ::after {
           bottom: -27px; } }
   .price__detail {
