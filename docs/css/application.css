@@ -714,18 +714,18 @@ img {
   padding: 114px 120px 112px 120px; }
   @media screen and (max-width: 767px) {
     .services {
-      padding: 94px 0 0; } }
+      padding: 98px 0 0; } }
   .services__box {
     text-align: right;
     margin-right: 56px; }
     @media screen and (max-width: 767px) {
       .services__box {
         text-align: left;
-        padding-left: 40px; } }
+        padding-left: 5%; } }
   @media screen and (max-width: 767px) {
     .services__title {
       font-size: 25px;
-      letter-spacing: .03%;
+      letter-spacing: .06%;
       line-height: 34px; }
       .services__title::after {
         height: 1px; } }
@@ -733,7 +733,7 @@ img {
     .services__subtitle {
       font-size: 14px;
       line-height: 21px;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.12em;
       margin-top: 11px; } }
   .services__contents {
     background-color: #000000;
@@ -750,7 +750,7 @@ img {
       width: 100%; }
       @media screen and (max-width: 767px) {
         .services__contents div {
-          padding: 24px 40px 40px;
+          padding: 24px 5% 40px 5%;
           height: 190px; } }
       .services__contents div dt {
         line-height: 22px;
@@ -758,7 +758,7 @@ img {
         @media screen and (max-width: 767px) {
           .services__contents div dt {
             font-size: 14px;
-            letter-spacing: .02em; } }
+            letter-spacing: .04em; } }
         .services__contents div dt span {
           display: block;
           font-size: 20px;
@@ -770,9 +770,9 @@ img {
           @media screen and (max-width: 767px) {
             .services__contents div dt span {
               display: inline;
-              font-size: 12px;
+              font-size: 14px;
               line-height: 16px;
-              letter-spacing: .02em;
+              letter-spacing: .04em;
               padding-left: 4px; } }
       .services__contents div dd {
         font-family: "Noto Sans JP", "sans-serif";
@@ -782,7 +782,7 @@ img {
           .services__contents div dd {
             font-size: 12px;
             line-height: 20px;
-            letter-spacing: .04em;
+            letter-spacing: .08em;
             margin-top: 68px; } }
   .services__item01 {
     background: url("../images/pc/services1.png") center center/cover; }
@@ -802,7 +802,7 @@ img {
     @media screen and (max-width: 767px) {
       .services__skills {
         display: block;
-        padding: 30px 40px 85px;
+        padding: 30px 5% 85px;
         margin: 0 auto;
         width: 100%;
         word-wrap: break-word; } }
@@ -826,7 +826,7 @@ img {
       .services__other {
         font-size: 14px;
         line-height: 19px;
-        letter-spacing: .02em; }
+        letter-spacing: .04em; }
         .services__other::after {
           bottom: 1px;
           height: 1px; } }
@@ -842,8 +842,8 @@ img {
       .services__languages {
         font-size: 12px;
         line-height: 25px;
-        letter-spacing: .07em;
-        margin-top: 19px;
+        letter-spacing: .14em;
+        margin-top: 10px;
         width: 100%; } }
 
 /*================================================================
