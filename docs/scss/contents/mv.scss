@@ -4,12 +4,16 @@
 #mv
 ================================================================*/
 .mv {
-  background: url("../images/pc/mv.png") center right / cover;
   color: $key-color-black;
+  background: $key-color-white;
   padding: 35px 120px 96px 120px;
 
   @include mq(sm) {
     padding: 30px 5% 35px;
+  }
+
+  &__image {
+    background: url("../images/pc/mv.png") center right / cover;
   }
 
   &__container {
