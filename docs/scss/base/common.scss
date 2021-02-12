@@ -19,6 +19,42 @@ body {
   color: $font-black;
   letter-spacing: $letter-spacing;
   font-family: $font-family-alata;
+  position: relative;
+  cursor: none;
+}
+
+.cursor,
+.chaser {
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.cursor {
+  width: $cursor-size;
+  height: $cursor-size;
+  background-color: $cursor-color;
+  z-index: 1001;
+  cursor: none;
+}
+
+.chaser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $chaser-size;
+  height: $chaser-size;
+  background-color: rgba($chaser-color, $chaser-color-opacity);
+  z-index: 1000;
+  transition: transform ease $chaser-easing-speed;
+  text-align: center;
+
+  &.is-active {
+    background-color: rgba($chaser-color, $chaser-active-color-opacity);
+    transform: scale($chaser-active-magnification);
+  }
 }
 
 body.fixed {
@@ -86,4 +122,3 @@ img {
   line-height: 38px;
   letter-spacing: .08em;
 }
-
