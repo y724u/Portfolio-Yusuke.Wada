@@ -9,7 +9,7 @@
   padding: 114px 120px 112px 120px;
 
   @include mq(sm) {
-    padding: 94px 0 0;
+    padding: 98px 0 0;
   }
 
   &__container {
@@ -22,7 +22,7 @@
 
     @include mq(sm) {
       text-align: left;
-      padding-left: 40px;
+      padding-left: 5%;
     }
   }
 
@@ -31,7 +31,7 @@
 
     @include mq(sm) {
       font-size: 25px;
-      letter-spacing: .03%;
+      letter-spacing: .06%;
       line-height: 34px;
 
       &::after {
@@ -46,7 +46,7 @@
     @include mq(sm) {
       font-size: 14px;
       line-height: 21px;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.12em;
       margin-top: 11px;
     }
   }
@@ -68,7 +68,7 @@
       width: 100%;
 
       @include mq(sm) {
-        padding: 24px 40px 40px;
+        padding: 24px 5% 40px 5%;
         height: 190px;
       }
 
@@ -78,7 +78,7 @@
 
         @include mq(sm) {
           font-size: 14px;
-          letter-spacing: .02em;
+          letter-spacing: .04em;
         }
 
         span {
@@ -92,9 +92,9 @@
 
           @include mq(sm) {
             display: inline;
-            font-size: 12px;
+            font-size: 14px;
             line-height: 16px;
-            letter-spacing: .02em;
+            letter-spacing: .04em;
             padding-left: 4px;
           }
         }
@@ -108,7 +108,7 @@
         @include mq(sm) {
           font-size: 12px;
           line-height: 20px;
-          letter-spacing: .04em;
+          letter-spacing: .08em;
           margin-top: 68px;
         }
       }
@@ -140,7 +140,7 @@
 
     @include mq(sm) {
       display: block;
-      padding: 30px 40px 85px;
+      padding: 30px 5% 85px;
       margin: 0 auto;
       width: 100%;
       word-wrap: break-word;
@@ -169,7 +169,7 @@
     @include mq(sm) {
       font-size: 14px;
       line-height: 19px;
-      letter-spacing: .02em;
+      letter-spacing: .04em;
 
       &::after {
         bottom: 1px;
@@ -191,8 +191,8 @@
     @include mq(sm) {
       font-size: 12px;
       line-height: 25px;
-      letter-spacing: .07em;
-      margin-top: 19px;
+      letter-spacing: .14em;
+      margin-top: 10px;
       width: 100%;
     }
   }
