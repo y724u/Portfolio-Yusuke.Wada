@@ -508,7 +508,11 @@ img {
   padding: 35px 120px 96px 120px; }
   @media screen and (max-width: 767px) {
     .mv {
+<<<<<<< Updated upstream
       padding: 60px 40px 35px 40px; } }
+=======
+      padding: 30px 5% 35px; } }
+>>>>>>> Stashed changes
   .mv__menu {
     display: flex;
     height: 28px;
@@ -648,7 +652,11 @@ img {
   @media screen and (max-width: 1230px) {
     .about__box {
       display: block;
+<<<<<<< Updated upstream
       padding-top: 101px; } }
+=======
+      padding-top: 50px; } }
+>>>>>>> Stashed changes
   @media screen and (max-width: 767px) {
     .about__box {
       display: block; } }
@@ -1082,7 +1090,11 @@ img {
       padding: 159px 60px 160px 90px; } }
   @media screen and (max-width: 767px) {
     .price {
+<<<<<<< Updated upstream
       padding: 91px 40px 100px 40px; } }
+=======
+      padding: 85px 5% 90px; } }
+>>>>>>> Stashed changes
   .price__container {
     max-width: 1140px; }
   .price__box {
