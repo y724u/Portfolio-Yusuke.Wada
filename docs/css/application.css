@@ -441,38 +441,7 @@ common
 body {
   color: #424242;
   letter-spacing: 0.08em;
-  font-family: "Alata", "sans-serif";
-  position: relative;
-  cursor: none; }
-
-.cursor,
-.chaser {
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  pointer-events: none; }
-
-.cursor {
-  width: 8px;
-  height: 8px;
-  background-color: #292929;
-  z-index: 1001;
-  cursor: none; }
-
-.chaser {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  background-color: rgba(209, 209, 224, 0.3);
-  z-index: 1000;
-  transition: transform ease 0.3s;
-  text-align: center; }
-  .chaser.is-active {
-    background-color: rgba(209, 209, 224, 0.5);
-    transform: scale(2); }
+  font-family: "Alata", "sans-serif"; }
 
 body.fixed {
   position: fixed;
