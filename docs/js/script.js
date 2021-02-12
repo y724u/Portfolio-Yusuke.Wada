@@ -92,7 +92,7 @@ $(function () {
     },
   });
 
-  var
+var
 cursor = $(".cursor"),
 follower = $(".follower"),
 cWidth = 8, //カーソルの大きさ
@@ -133,7 +133,7 @@ $(document).on("mousemove", function(e) {
     mouseY = e.pageY;
 });
 
-$("a , .swiper-slide , .swiper-button-prev , .swiper-button-next").on({
+$("a , .swiper-slide , .swiper-button-prev , .swiper-button-next , .works__bg , .works__close").on({
   "mouseenter": function() {
     cursor.addClass("is-active");
     follower.addClass("is-active");
