@@ -37,19 +37,15 @@ body {
 .cursor {
   width: 8px;
   height: 8px;
-  // background-color: #000;
   background: #fff;
   z-index: 1001;
 
-
   &.is-active {
-    // mix-blend-mode: difference;
-    // background-color: #ffffff;
-    transform: scale(3);
+    transform: scale(4);
   }
 }
 
-.test {
+.cursor__wrapper {
   position: absolute;
   top: 0;
   left: 0;
@@ -75,8 +71,6 @@ body {
     transform: scale(0);
   }
   &.is-active {
-    mix-blend-mode: exclusion;
-    color: #000;
     display: none;
   }
 }

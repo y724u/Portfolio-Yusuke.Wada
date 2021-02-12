@@ -461,9 +461,9 @@ body {
   background: #fff;
   z-index: 1001; }
   .cursor.is-active {
-    transform: scale(3); }
+    transform: scale(4); }
 
-.test {
+.cursor__wrapper {
   position: absolute;
   top: 0;
   left: 0;
@@ -487,8 +487,6 @@ body {
     font-weight: bold;
     transform: scale(0); }
   .follower.is-active {
-    mix-blend-mode: exclusion;
-    color: #000;
     display: none; }
 
 body.fixed {
