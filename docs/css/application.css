@@ -853,6 +853,7 @@ img {
     word-wrap: break-word; }
     @media screen and (max-width: 1230px) {
       .services__skills {
+        display: block;
         width: 100%;
         word-wrap: break-word; } }
     @media screen and (max-width: 767px) {
@@ -890,10 +891,11 @@ img {
     font-family: "Noto Sans JP", "sans-serif";
     font-weight: 500;
     line-height: 24px;
-    letter-spacing: .14em; }
+    letter-spacing: .14em;
+    word-break: break-all; }
     @media screen and (max-width: 1230px) {
       .services__languages {
-        margin-top: 19px; } }
+        margin-top: 13px; } }
     @media screen and (max-width: 767px) {
       .services__languages {
         font-size: 12px;

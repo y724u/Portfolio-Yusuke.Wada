@@ -134,6 +134,7 @@
     word-wrap: break-word;
 
     @include mq(lg) {
+      display: block;
       width: 100%;
       word-wrap: break-word;
     }
@@ -183,9 +184,10 @@
     font-weight: 500;
     line-height: 24px;
     letter-spacing: .14em;
+    word-break: break-all;
 
     @include mq(lg) {
-      margin-top: 19px;
+      margin-top: 13px;
     }
 
     @include mq(sm) {
