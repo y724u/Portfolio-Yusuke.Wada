@@ -7,7 +7,7 @@
   @extend %section;
 
   @include mq(sm) {
-    padding: 92px 40px 0;
+    padding: 92px 5% 0;
   }
 
   &__container {
@@ -31,7 +31,6 @@
 
     @include mq(lg) {
       display: block;
-      padding-top: 101px;
     }
 
     @include mq(sm) {
@@ -66,7 +65,7 @@
 
     @include mq(sm) {
       font-size: 25px;
-      letter-spacing: .03%;
+      letter-spacing: .06%;
       line-height: 34px;
 
       &::after {
@@ -87,7 +86,7 @@
     @include mq(sm) {
       font-size: 14px;
       line-height: 21px;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.12em;
       margin-top: 11px;
     }
   }
@@ -101,7 +100,7 @@
     @include mq(sm) {
       font-size: 12px;
       line-height: 26px;
-      letter-spacing: .04em;
+      letter-spacing: .03em;
       margin-top: 23px;
     }
   }
@@ -110,7 +109,7 @@
     font-family: $font-family-noto;
 
     & + & {
-      margin-top: 24px;
+      margin-top: 20px;
     }
   }
 }
