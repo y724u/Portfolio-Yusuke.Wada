@@ -133,7 +133,7 @@ $(document).on("mousemove", function(e) {
     mouseY = e.pageY;
 });
 
-$("a").on({
+$("a , .swiper-slide , .swiper-button-prev , .swiper-button-next").on({
   "mouseenter": function() {
     cursor.addClass("is-active");
     follower.addClass("is-active");

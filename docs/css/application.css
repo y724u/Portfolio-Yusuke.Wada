@@ -447,6 +447,11 @@ body {
   cursor: none;
   z-index: 0; }
 
+div:hover,
+li:hover,
+a:hover {
+  cursor: none; }
+
 .cursor,
 .follower {
   border-radius: 50%;

@@ -25,12 +25,20 @@ body {
   z-index: 0;
 }
 
+div,
+li,
+a {
+  &:hover {
+    cursor: none;
+  }
+}
+
 .cursor,
 .follower {
   border-radius: 50%;
   position: absolute;
   top: 0;
-  left: 0; 
+  left: 0;
   pointer-events: none;
 }
 
@@ -39,7 +47,6 @@ body {
   height: 8px;
   background: #fff;
   z-index: 1001;
-
 
   &.is-active {
     transform: scale(4);
@@ -65,12 +72,14 @@ body {
   z-index: 1000;
   transition: transform ease .1s;
   text-align: center;
+
   span {
     display: inline-block;
     font-size: 14px;
     font-weight: bold;
     transform: scale(0);
   }
+
   &.is-active {
     color: #000;
     display: none;
@@ -142,4 +151,3 @@ img {
   line-height: 38px;
   letter-spacing: .08em;
 }
-
