@@ -439,9 +439,62 @@ common
     display: none; } }
 
 body {
+  background: #000;
   color: #424242;
+  cursor: none;
+  font-family: "Alata", "sans-serif";
   letter-spacing: 0.08em;
-  font-family: "Alata", "sans-serif"; }
+  position: relative;
+  z-index: 0; }
+
+div:hover,
+li:hover,
+a:hover,
+img:hover {
+  cursor: none; }
+
+.cursor,
+.follower {
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0; }
+
+.cursor {
+  background: #fff;
+  width: 8px;
+  height: 8px;
+  z-index: 10001; }
+  .cursor.is-active {
+    transform: scale(4); }
+
+.cursor__wrapper {
+  position: absolute;
+  pointer-events: none;
+  mix-blend-mode: exclusion;
+  top: 0;
+  left: 0;
+  z-index: 10000; }
+
+.follower {
+  align-items: center;
+  background-color: rgba(253, 254, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  transition: transform ease .1s;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  z-index: 10001; }
+  .follower span {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    transform: scale(0); }
+  .follower.is-active {
+    color: #000;
+    display: none; }
 
 body.fixed {
   position: fixed;
@@ -503,12 +556,14 @@ img {
 #mv
 ================================================================*/
 .mv {
-  background: url("../images/pc/mv.png") center right/cover;
   color: #000000;
+  background: #FFFFFF;
   padding: 35px 120px 96px 120px; }
   @media screen and (max-width: 767px) {
     .mv {
       padding: 30px 5% 35px; } }
+  .mv__image {
+    background: url("../images/pc/mv.png") center right/cover; }
   .mv__menu {
     display: flex;
     height: 28px;
@@ -798,6 +853,7 @@ img {
     word-wrap: break-word; }
     @media screen and (max-width: 1230px) {
       .services__skills {
+        display: block;
         width: 100%;
         word-wrap: break-word; } }
     @media screen and (max-width: 767px) {
@@ -835,10 +891,11 @@ img {
     font-family: "Noto Sans JP", "sans-serif";
     font-weight: 500;
     line-height: 24px;
-    letter-spacing: .14em; }
+    letter-spacing: .14em;
+    word-break: break-all; }
     @media screen and (max-width: 1230px) {
       .services__languages {
-        margin-top: 19px; } }
+        margin-top: 13px; } }
     @media screen and (max-width: 767px) {
       .services__languages {
         font-size: 12px;
@@ -912,7 +969,7 @@ img {
     position: absolute;
     width: 100%;
     cursor: pointer;
-    z-index: 0; }
+    z-index: 100; }
   .works__modal {
     cursor: pointer;
     height: 100%;
@@ -921,7 +978,7 @@ img {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 890px;
-    z-index: 100; }
+    z-index: 200; }
     @media screen and (max-width: 767px) {
       .works__modal {
         width: 80%; } }

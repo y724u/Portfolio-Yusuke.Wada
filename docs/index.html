@@ -29,33 +29,39 @@
 </head>
 
 <body>
+  <div class="cursor__wrapper">
+    <div class="cursor"></div>
+  </div>
+  <div class="follower"></div>
   <!-- mv -->
   <section class="mv">
-    <div class="mv__container">
-      <!-- header -->
-      <header class="mv__menu">
-        <div class="mv__logo">
-          <img src="./images/pc/logo.svg" alt="Portfolio-Yusuke.Wada">
-        </div>
-        <nav class="mv__nav js-open">
-          <ul class="mv__list">
-            <li class="mv__item is-sp"><a href="#top" class="mv__link js-link">Top</a></li>
-            <li class="mv__item"><a href="#about" class="mv__link js-link">About</a></li>
-            <li class="mv__item"><a href="#services" class="mv__link js-link">Services</a></li>
-            <li class="mv__item"><a href="#works" class="mv__link js-link">Works</a></li>
-            <li class="mv__item"><a href="#price" class="mv__link js-link">Price</a></li>
-            <li class="mv__item"><a href="#contact" class="mv__link js-link">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="mv__hamburger js-open" id="hamburger_menu">
-          <span class="mv__line01"></span>
-          <span class="mv__line02"></span>
-        </div>
-      </header>
-      <h1 class="mv__title">WADA YUSUKE</h1>
-      <p class="mv__description">
-        is a Front Engineer based in Fukuoka Coding, Planning, Development, etc.
-      </p>
+    <div class="mv__image">
+      <div class="mv__container">
+        <!-- header -->
+        <header class="mv__menu">
+          <div class="mv__logo">
+            <img src="./images/pc/logo.svg" alt="Portfolio-Yusuke.Wada">
+          </div>
+          <nav class="mv__nav js-open">
+            <ul class="mv__list">
+              <li class="mv__item is-sp"><a href="#top" class="mv__link js-link js-cursor">Top</a></li>
+              <li class="mv__item"><a href="#about" class="mv__link js-link js-cursor">About</a></li>
+              <li class="mv__item"><a href="#services" class="mv__link js-link js-cursor">Services</a></li>
+              <li class="mv__item"><a href="#works" class="mv__link js-link js-cursor">Works</a></li>
+              <li class="mv__item"><a href="#price" class="mv__link js-link js-cursor">Price</a></li>
+              <li class="mv__item"><a href="#contact" class="mv__link js-link js-cursor">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="mv__hamburger js-open" id="hamburger_menu">
+            <span class="mv__line01"></span>
+            <span class="mv__line02"></span>
+          </div>
+        </header>
+        <h1 class="mv__title">WADA YUSUKE</h1>
+        <p class="mv__description">
+          is a Front Engineer based in Fukuoka Coding, Planning, Development, etc.
+        </p>
+      </div>
     </div>
   </section>
   <!-- about -->
@@ -122,25 +128,25 @@
         <p class="works__subtitle">制作物・実績</p>
       </div>
       <!-- Swiper -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev js-cursor"></div>
+      <div class="swiper-button-next js-cursor"></div>
       <div class="swiper-container">
         <ul class="swiper-wrapper">
-          <li class="swiper-slide js-modalOpen" data-target="modal01">
+          <li class="swiper-slide js-modalOpen js-cursor" data-target="modal01">
             <div class="swiper-inner">
               <img src="./images/pc/works1.png" alt="ENTOR SERVICE">
             </div>
             <p class="works__name">ENTOR SERVICE</p>
             <p class="works__type">Service Site</p>
           </li>
-          <li class="swiper-slide js-modalOpen" data-target="modal02">
+          <li class="swiper-slide js-modalOpen js-cursor" data-target="modal02">
             <div class="swiper-inner">
               <img src="./images/pc/works2.png" alt="ENTOR COMPANY">
             </div>
             <p class="works__name">ENTOR COMPANY</p>
             <p class="works__type">Website</p>
           </li>
-          <li class="swiper-slide js-modalOpen" data-target="modal03">
+          <li class="swiper-slide js-modalOpen js-cursor" data-target="modal03">
             <div class="swiper-inner">
               <img src="./images/pc/works3.png" alt="FLOBRY">
             </div>
@@ -152,9 +158,13 @@
     </div>
     <!-- modal -->
     <div class="works__window js-modal" id="modal01">
-      <div class="works__bg js-modalClose"></div>
+      <div class="cursor__wrapper">
+        <div class="cursor"></div>
+      </div>
+      <div class="follower"></div>
+      <div class="works__bg js-modalClose js-cursor"></div>
       <div class="works__modal js-modalClose">
-        <img class="works__close js-modalClose" src="./images/pc/close.svg" alt="閉じるボタン">
+        <img class="works__close js-modalClose js-cursor" src="./images/pc/close.svg" alt="閉じるボタン">
         <div class="works__wrapper">
           <div class="works__image">
             <img src="./images/pc/works1.png" alt="ENTOR SERVICE">
@@ -177,16 +187,20 @@
           <dl class="works__explanation">
             <dt>Site</dt>
             <dd>
-              <a href="https://y724u.github.io/Entor_02/" target="_blank" rel="noopener noreferrer">Entor</a>
+              <a class="js-cursor" href="https://y724u.github.io/Entor_02/" target="_blank" rel="noopener noreferrer">Entor</a>
             </dd>
           </dl>
         </div>
       </div>
     </div>
     <div class="works__window js-modal" id="modal02">
-      <div class="works__bg js-modalClose"></div>
+      <div class="cursor__wrapper">
+        <div class="cursor"></div>
+      </div>
+      <div class="follower"></div>
+      <div class="works__bg js-modalClose js-cursor"></div>
       <div class="works__modal js-modalClose">
-        <img class="works__close js-modalClose" src="./images/pc/close.svg" alt="閉じるボタン">
+        <img class="works__close js-modalClose js-cursor" src="./images/pc/close.svg" alt="閉じるボタン">
         <div class="works__wrapper">
           <div class="works__image">
             <img src="./images/pc/works2.png" alt="ENTOR株式会社">
@@ -209,16 +223,20 @@
           <dl class="works__explanation">
             <dt>Site</dt>
             <dd>
-              <a href="https://y724u.github.io/Entor_08/" target="_blank" rel="noopener noreferrer">ENTOR株式会社</a>
+              <a class="js-cursor" href="https://y724u.github.io/Entor_08/" target="_blank" rel="noopener noreferrer">ENTOR株式会社</a>
             </dd>
           </dl>
         </div>
       </div>
     </div>
     <div class="works__window js-modal" id="modal03">
-      <div class="works__bg js-modalClose"></div>
+      <div class="cursor__wrapper">
+        <div class="cursor"></div>
+      </div>
+      <div class="follower"></div>
+      <div class="works__bg js-modalClose js-cursor"></div>
       <div class="works__modal js-modalClose">
-        <img class="works__close js-modalClose" src="./images/pc/close.svg" alt="閉じるボタン">
+        <img class="works__close js-modalClose js-cursor" src="./images/pc/close.svg" alt="閉じるボタン">
         <div class="works__wrapper">
           <div class="works__image">
             <img src="./images/pc/works3.png" alt="Frobry">
@@ -241,7 +259,7 @@
           <dl class="works__explanation">
             <dt>Site</dt>
             <dd>
-              <a href="https://y724u.github.io/Entor_01/#" target="_blank" rel="noopener noreferrer">Frobry</a>
+              <a class="js-cursor" href="https://y724u.github.io/Entor_01/#" target="_blank" rel="noopener noreferrer">Frobry</a>
             </dd>
           </dl>
         </div>
@@ -320,11 +338,11 @@
         <address class="contact__address">
           <div class="contact__form">
             <p>フォームでお問あわあせ</p>
-            <a href="#" target="_blank" rel="noopener noreferrer">click here</a>
+            <a class="js-cursor" href="https://forms.gle/R7JPMFyBNfy5Qxzx9" target="_blank" rel="noopener noreferrer">click here</a>
           </div>
           <div class="contact__mail">
             <p>メールでお問い合わせ</p>
-            <a href="mailto:wada_yusuke@gmail.com" target="_blank" rel="noopener noreferrer">wada_yusuke@gmail.com</a>
+            <a class="js-cursor" href="mailto:wada_yusuke@gmail.com" target="_blank" rel="noopener noreferrer">wada_yusuke@gmail.com</a>
           </div>
         </address>
       </div>
@@ -334,20 +352,22 @@
   <footer class="footer">
     <div class="footer__container">
       <small class="footer__at">@2021 WADA YUSUKE PORTFOLIO</small>
-      <a class="footer__twitter" href="https://twitter.com/yu724u" target="_blank" rel="noopener noreferrer">
+      <a class="footer__twitter js-cursor" href="https://twitter.com/yu724u" target="_blank" rel="noopener noreferrer">
         <img src="./images/pc/twitter.svg" alt="twitter">
       </a>
-      <a class="footer__facebook" href="#" target="_blank" rel="noopener noreferrer">
+      <a class="footer__facebook js-cursor" href="#" target="_blank" rel="noopener noreferrer">
         <img src="./images/pc/facebook.svg" alt="facebook">
       </a>
-      <a class="footer__codepen" href="https://codepen.io/y724u" target="_blank" rel="noopener noreferrer">
+      <a class="footer__codepen js-cursor" href="https://codepen.io/y724u" target="_blank" rel="noopener noreferrer">
         <img src="./images/pc/codepen.svg" alt="codepen">
       </a>
-      <a class="footer__github" href="https://github.com/y724u" target="_blank" rel="noopener noreferrer">
+      <a class="footer__github js-cursor" href="https://github.com/y724u" target="_blank" rel="noopener noreferrer">
         <img src="./images/pc/github.svg" alt="github">
       </a>
     </div>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
 
   <!-- jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
