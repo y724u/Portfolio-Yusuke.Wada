@@ -91,7 +91,7 @@ $(function () {
       prevEl: '.swiper-button-prev',
     },
   });
-
+// <!-- cursor  -->
   let
     cursor = $(".cursor"),
     follower = $(".follower"),
