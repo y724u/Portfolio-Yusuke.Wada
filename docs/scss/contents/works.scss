@@ -76,12 +76,13 @@
   // <-- modal -->
   &__window {
     height: 100vh;
+    opacity: 0;
     position: fixed;
     top: 0;
+    transform: translate3d(0, 0, 1px);
+    transition: opacity .3s ,visibility .3s;
     width: 100%;
-    opacity: 0;
     visibility: hidden;
-    transition: 0.8s;
     z-index: 100;
 
     &.show_modal {
@@ -286,7 +287,12 @@
     }
 
     @include mq(sm) {
-      background: none;
+      // background: none;
+      background-color: $key-color-white;
+      top: calc(50% + 18px);
+      left: -20px;
+      width: 37px;
+      height: 37px;
     }
   }
 
