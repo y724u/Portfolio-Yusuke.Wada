@@ -453,16 +453,14 @@ a:hover,
 img:hover {
   cursor: none; }
 
-.cursor,
-.follower {
+.cursor {
+  background: #fff;
   border-radius: 50%;
   position: absolute;
   pointer-events: none;
+  transition: transform .4s;
   top: 0;
-  left: 0; }
-
-.cursor {
-  background: #fff;
+  left: 0;
   width: 8px;
   height: 8px;
   z-index: 10001; }
@@ -476,25 +474,6 @@ img:hover {
   top: 0;
   left: 0;
   z-index: 10000; }
-
-.follower {
-  align-items: center;
-  background-color: rgba(253, 254, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  transition: transform ease .1s;
-  text-align: center;
-  width: 40px;
-  height: 40px;
-  z-index: 10001; }
-  .follower span {
-    display: inline-block;
-    font-size: 14px;
-    font-weight: bold;
-    transform: scale(0); }
-  .follower.is-active {
-    color: #000;
-    display: none; }
 
 body.fixed {
   position: fixed;

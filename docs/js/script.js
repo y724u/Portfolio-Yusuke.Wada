@@ -94,9 +94,7 @@ $(function () {
 // <!-- cursor  -->
   let
     cursor = $(".cursor"),
-    follower = $(".follower"),
     cWidth = 8, //カーソルの大きさ
-    fWidth = 40, //フォロワーの大きさ
     delay = 10, //数字を大きくするとフォロワーがより遅れて来る
     mouseX = 0, //マウスのX座標
     mouseY = 0, //マウスのY座標
@@ -110,13 +108,6 @@ $(function () {
     onRepeat: function () {
       posX += (mouseX - posX) / delay;
       posY += (mouseY - posY) / delay;
-
-      TweenMax.set(follower, {
-        css: {
-          left: posX - (fWidth / 2),
-          top: posY - (fWidth / 2)
-        }
-      });
 
       TweenMax.set(cursor, {
         css: {
@@ -136,11 +127,9 @@ $(function () {
   $(".js-cursor").on({
     "mouseenter": function () {
       cursor.addClass("is-active");
-      follower.addClass("is-active");
     },
     "mouseleave": function () {
       cursor.removeClass("is-active");
-      follower.removeClass("is-active");
     }
   });
 });
