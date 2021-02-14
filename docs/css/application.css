@@ -446,12 +446,16 @@ body {
   letter-spacing: 0.08em;
   position: relative;
   z-index: 0; }
+  @media screen and (max-width: 767px) {
+    body {
+      cursor: default; } }
 
-div:hover,
-li:hover,
-a:hover,
-img:hover {
-  cursor: none; }
+@media screen and (min-width: 768px) {
+  div:hover,
+  li:hover,
+  a:hover,
+  img:hover {
+    cursor: none; } }
 
 .cursor {
   background: #fff;
@@ -466,6 +470,9 @@ img:hover {
   z-index: 10001; }
   .cursor.is-active {
     transform: scale(4); }
+  @media screen and (max-width: 767px) {
+    .cursor {
+      display: none; } }
 
 .cursor__wrapper {
   position: absolute;

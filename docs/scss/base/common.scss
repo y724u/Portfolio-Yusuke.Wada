@@ -23,14 +23,20 @@ body {
   letter-spacing: $letter-spacing;
   position: relative;
   z-index: 0;
+
+  @include mq(sm) {
+    cursor: default;
+  }
 }
 
-div,
-li,
-a,
-img {
-  &:hover {
-    cursor: none;
+@include mq(md) {
+  div,
+  li,
+  a,
+  img {
+    &:hover {
+      cursor: none;
+    }
   }
 }
 
@@ -48,6 +54,10 @@ img {
 
   &.is-active {
     transform: scale(4);
+  }
+
+  @include mq(sm) {
+    display: none;
   }
 }
 
