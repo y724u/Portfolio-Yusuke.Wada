@@ -287,7 +287,12 @@
     }
 
     @include mq(sm) {
-      background: none;
+      // background: none;
+      background-color: $key-color-white;
+      top: calc(50% + 18px);
+      left: -20px;
+      width: 37px;
+      height: 37px;
     }
   }
 

@@ -57,17 +57,20 @@ $(function () {
       // 画面幅が 640px 以上の場合（window width >= 640px）
       0: {
         slidesPerView: 1,
+        slidesOffsetAfter: 0,
         spaceBetween: 0,
       },
       // 画面幅が 1070px 以上の場合（window width >= 1070px）
       890: {
         slidesPerView: 1.5,
+        slidesOffsetAfter: 250,
         spaceBetween: 40,
       },
 
       // 画面幅が 1070px 以上の場合（window width >= 1070px）
       1070: {
         slidesPerView: 2,
+        slidesOffsetAfter: 510,
         spaceBetween: 40,
       },
       // 画面幅が 1290px 以上の場合（window width >= 1290px）
@@ -75,9 +78,10 @@ $(function () {
         slidesPerView: 2.5,
         spaceBetween: 45,
       },
-      // 画面幅が 1290px 以上の場合（window width >= 1290px）
+      // 画面幅が 1550px 以上の場合（window width >= 1290px）
       1550: {
         slidesPerView: 3,
+        slidesOffsetAfter: 0,
         spaceBetween: 45,
       }
     },
