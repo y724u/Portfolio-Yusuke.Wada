@@ -95,7 +95,7 @@ $(function () {
       prevEl: '.swiper-button-prev',
     },
   });
-// <!-- cursor  -->
+  // <!-- cursor  -->
   let
     cursor = $(".cursor"),
     cWidth = 8, //カーソルの大きさ
@@ -136,4 +136,11 @@ $(function () {
       cursor.removeClass("is-active");
     }
   });
+
+  // WOW.js
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const WOW = require('wow.js');
+  new WOW({
+    animateClass: 'animate__animated'
+  }).init();
 });
