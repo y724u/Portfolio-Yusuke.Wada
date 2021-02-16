@@ -138,4 +138,6 @@ $(function () {
       cursor.removeClass("is-active");
     }
   });
+  // <!-- wow.js  -->
+  new WOW().init();
 });
