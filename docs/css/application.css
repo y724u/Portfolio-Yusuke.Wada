@@ -543,13 +543,14 @@ img {
 ================================================================*/
 .mv {
   color: #000000;
-  background: #FFFFFF;
-  padding: 35px 120px 96px 120px; }
+  background: #FFFFFF; }
   @media screen and (max-width: 767px) {
     .mv {
       padding: 30px 5% 35px; } }
   .mv__image {
     background: url("../images/pc/mv.png") center right/cover; }
+  .mv__container {
+    padding: 35px 120px 96px 120px; }
   .mv__menu {
     display: flex;
     height: 28px;
