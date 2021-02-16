@@ -58,9 +58,9 @@ $(function () {
       0: {
         slidesPerView: 1,
         slidesOffsetAfter: 0,
-        spaceBetween: 0,
+        spaceBetween: 5,
       },
-      // 画面幅が 1070px 以上の場合（window width >= 1070px）
+      // 画面幅が 890px 以上の場合（window width >= 1070px）
       890: {
         slidesPerView: 1.5,
         slidesOffsetAfter: 250,

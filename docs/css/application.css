@@ -900,13 +900,13 @@ img {
   padding: 128px 0px 125px 0px; }
   @media screen and (max-width: 767px) {
     .works {
-      padding: 47px 6% 47px 0px; } }
+      padding: 47px 5% 47px 0px; } }
   .works__container {
     position: relative;
     margin-left: 180px; }
     @media screen and (max-width: 767px) {
       .works__container {
-        margin-left: 6%; } }
+        margin-left: 5%; } }
   @media screen and (max-width: 767px) {
     .works__title {
       font-size: 25px;
@@ -982,7 +982,8 @@ img {
       .works__close {
         width: 20px;
         height: 20px;
-        top: 20%; } }
+        top: 20%;
+        right: 0; } }
   .works__wrapper {
     cursor: default;
     background-color: #ffffff;
@@ -1075,9 +1076,7 @@ img {
       margin-top: 30px; } }
 
 .swiper-inner {
-  overflow: hidden;
-  width: 460px;
-  height: 303px; }
+  overflow: hidden; }
   @media screen and (max-width: 767px) {
     .swiper-inner {
       height: auto;
@@ -1108,11 +1107,13 @@ img {
     outline: none; }
   @media screen and (max-width: 767px) {
     .swiper-pagination-bullet {
-      width: 6px;
-      height: 6px;
+      width: 8px;
+      height: 8px;
       margin-top: 0; }
       .swiper-pagination-bullet + .swiper-pagination-bullet {
-        margin-left: 8px; } }
+        margin-left: 14px; }
+      .swiper-pagination-bullet:hover {
+        cursor: pointer; } }
 
 .swiper-pagination-bullet-active {
   background: #8B8B8B; }
