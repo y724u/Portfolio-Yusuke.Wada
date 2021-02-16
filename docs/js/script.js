@@ -88,14 +88,16 @@ $(function () {
     // pagination
     pagination: {
       el: '.swiper-pagination',
+      type: 'bullets', //ページネーションの種類
+      clickable: true, //クリックに反応させる
     },
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+    // // Navigation arrows
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
   });
-// <!-- cursor  -->
+  // <!-- cursor  -->
   let
     cursor = $(".cursor"),
     cWidth = 8, //カーソルの大きさ
