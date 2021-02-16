@@ -32,7 +32,11 @@
       padding: 0 0 31px 5%;
 
       a {
-        padding-left: 10px;
+        padding-left: 15px;
+
+        &:last-child {
+          padding-right: 15px;
+        }
       }
     }
   }
