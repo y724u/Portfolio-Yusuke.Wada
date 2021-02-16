@@ -10,7 +10,7 @@
   padding: 128px 0px 125px 0px;
 
   @include mq(sm) {
-    padding: 47px 5% 47px 0px;
+    padding: 47px 6% 47px 0px;
   }
 
   &__container {
@@ -18,7 +18,7 @@
     margin-left: 180px;
 
     @include mq(sm) {
-      margin-left: 5%;
+      margin-left: 6%;
     }
   }
 
