@@ -1083,8 +1083,8 @@ img {
     height: 100%; }
   @media screen and (max-width: 767px) {
     .swiper-inner {
-      height: 100%;
-      width: 100%; } }
+      width: 100%;
+      height: 100%; } }
 
 .swiper-slide {
   cursor: pointer; }
