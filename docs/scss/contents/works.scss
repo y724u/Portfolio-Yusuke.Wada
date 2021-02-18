@@ -263,6 +263,11 @@
   &-inner {
     overflow: hidden;
 
+    img {
+      width: 460px;
+      height: 303px;
+    }
+
     @include mq(sm) {
       height: auto;
       width: 100%;
@@ -274,6 +279,7 @@
   }
 
   &-pagination {
+    display: none;
 
     @include mq(sm) {
       display: inline-block;
