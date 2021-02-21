@@ -958,13 +958,13 @@ img {
     position: absolute;
     width: 100%;
     cursor: pointer;
-    z-index: 100; }
+    z-index: 0; }
   .works__modal {
     cursor: pointer;
     height: 100%;
     left: 50%;
     position: absolute;
-    top: 55%;
+    top: 50%;
     transform: translate(-50%, -50%);
     width: 890px;
     z-index: 200; }
@@ -978,12 +978,12 @@ img {
     position: absolute;
     top: calc(10% - 48px);
     right: 10%;
-    z-index: 200; }
+    z-index: 1000; }
     @media screen and (max-width: 767px) {
       .works__close {
         width: 20px;
         height: 20px;
-        top: 4%;
+        top: 7%;
         right: 0; } }
   .works__wrapper {
     cursor: default;
@@ -1002,7 +1002,7 @@ img {
     @media screen and (max-width: 767px) {
       .works__wrapper {
         width: 100%;
-        height: 75%;
+        height: 70%;
         padding: 30px; } }
   .works__image img {
     width: 100%; }
