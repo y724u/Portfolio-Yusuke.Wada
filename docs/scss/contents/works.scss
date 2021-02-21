@@ -111,7 +111,7 @@
     z-index: 200;
 
     @include mq(sm) {
-      top: calc(45% + 50px);
+      top: calc(40% + 50px);
       width: 80%;
     }
   }
@@ -128,7 +128,7 @@
     @include mq(sm) {
       width: 20px;
       height: 20px;
-      top: calc(15% - 30px);
+      top: calc(15% - 25px);
       right: 0;
     }
   }
