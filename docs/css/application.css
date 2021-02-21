@@ -998,7 +998,7 @@ img {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 85%;
     z-index: 300; }
     @media screen and (max-width: 767px) {
       .works__wrapper {
