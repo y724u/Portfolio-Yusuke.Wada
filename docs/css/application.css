@@ -984,7 +984,7 @@ img {
       .works__close {
         width: 20px;
         height: 20px;
-        top: 12%;
+        top: calc(15% - 25px);
         right: 0; } }
   .works__wrapper {
     cursor: default;

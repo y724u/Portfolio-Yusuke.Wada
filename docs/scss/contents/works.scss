@@ -128,7 +128,7 @@
     @include mq(sm) {
       width: 20px;
       height: 20px;
-      top: 12%;
+      top: calc(15% - 25px);
       right: 0;
     }
   }
