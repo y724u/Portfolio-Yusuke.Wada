@@ -945,7 +945,7 @@ img {
     position: fixed;
     top: 0;
     transform: translate3d(0, 0, 1px);
-    transition: opacity .7s, visibility .7s;
+    transition: 0.7s;
     width: 100%;
     visibility: hidden;
     z-index: 100; }
@@ -964,7 +964,7 @@ img {
     height: 100%;
     left: 50%;
     position: absolute;
-    top: 50%;
+    top: 55%;
     transform: translate(-50%, -50%);
     width: 890px;
     z-index: 200; }
@@ -983,7 +983,7 @@ img {
       .works__close {
         width: 20px;
         height: 20px;
-        top: 12%;
+        top: 4%;
         right: 0; } }
   .works__wrapper {
     cursor: default;
@@ -995,14 +995,14 @@ img {
     overflow-y: scroll;
     padding: 5%;
     position: absolute;
-    top: 50%;
+    top: 45%;
     transform: translate(-50%, -50%);
     width: 80%;
     z-index: 300; }
     @media screen and (max-width: 767px) {
       .works__wrapper {
         width: 100%;
-        height: 70%;
+        height: 75%;
         padding: 30px; } }
   .works__image img {
     width: 100%; }
