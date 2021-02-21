@@ -970,7 +970,7 @@ img {
     z-index: 200; }
     @media screen and (max-width: 767px) {
       .works__modal {
-        top: calc(40% + 50px);
+        top: calc(35% + 50px);
         width: 80%; } }
   .works__close {
     cursor: pointer;
