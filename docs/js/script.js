@@ -1,29 +1,41 @@
 // <!-- スムーススクロール -->
 $(function () {
+  // #から始まるURLがクリックされた時
   $('a[href^="#"]').on('click', function () {
+    // 移動速度を指定（ミリ秒）
     let speed = 500;
-    let href = $(this).attr('href');
-    let target = $(href == '#' || href == '' ? 'html' : href);
-    let position = target.offset().top - 100;
-    $('html, body').animate({ scrollTop: position }, speed, 'swing');
+    // hrefで指定されたidを取得
+    let id = $(this).attr("href");
+    // idの値が#のみだったらターゲットをhtmlタグにしてトップへ戻るようにする
+    let target = $("#" == id ? "html" : id);
+    // ページのトップを基準にターゲットの位置を取得
+    let position = $(target).offset().top - 50;
+    // ターゲットの位置までspeedの速度で移動
+    $("html, body").animate(
+      {
+        scrollTop: position
+      },
+      speed
+    );
     return false;
   });
 
   // <!-- ハンバーガーメニュー -->
   let state = false;
-  let scrollStops;
+  let scrollStop;
   $('.js-open').on('click', function () {
     $('.js-open').toggleClass('active');
     if (state == false) {
-      scrollStops = $(window).scrollTop();
-      $('body').addClass('fixed').css({ 'top': scrollStops });
+      scrollStop = $(window).scrollTop();
+      $('body').addClass('fixed').css({ 'top': -scrollStop });
       state = true;
     } else {
       $('body').removeClass('fixed').css({ 'top': 0 });
-      window.scrollTo(0, scrollStops);
+      window.scrollTo(0, scrollStop);
       state = false;
     }
   });
+
   // <!-- ハンバーガーメニューページ内リンク -->
   $('.js-link').on('click', function () {
     $('.js-open').removeClass('active');
@@ -91,11 +103,6 @@ $(function () {
       type: 'bullets', //ページネーションの種類
       clickable: true, //クリックに反応させる
     },
-    // // Navigation arrows
-    // navigation: {
-    //   nextEl: '.swiper-button-next',
-    //   prevEl: '.swiper-button-prev',
-    // },
   });
   // <!-- cursor  -->
   let
@@ -108,7 +115,7 @@ $(function () {
     posY = 0; //フォロワーのX座標
 
   //カーソルの遅延アニメーション
-  //ほんの少ーーーしだけ遅延させる 0.001秒
+  //ほんの少しだけ遅延させる 0.001秒
   TweenMax.to({}, .001, {
     repeat: -1,
     onRepeat: function () {
@@ -138,6 +145,7 @@ $(function () {
       cursor.removeClass("is-active");
     }
   });
+
   // <!-- wow.js  -->
   new WOW().init();
 });
