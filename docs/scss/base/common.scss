@@ -136,3 +136,7 @@ img {
   line-height: 38px;
   letter-spacing: .08em;
 }
+
+html > * {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+ } 
