@@ -97,24 +97,24 @@
     position: absolute;
     width: 100%;
     cursor: pointer;
-    z-index: 200;
+    // z-index: 200;
   }
 
-  &__modal {
-    cursor: pointer;
-    height: 100%;
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 890px;
-    z-index: 300;
+  // &__modal {
+  //   cursor: pointer;
+  //   height: 100%;
+  //   left: 50%;
+  //   position: absolute;
+  //   top: 50%;
+  //   transform: translate(-50%, -50%);
+  //   width: 890px;
+  //   z-index: 300;
 
-    @include mq(sm) {
-      top: calc(40% + 50px);
-      width: 80%;
-    }
-  }
+  //   @include mq(sm) {
+  //     top: calc(40% + 50px);
+  //     width: 80%;
+  //   }
+  // }
 
   &__close {
     cursor: pointer;
