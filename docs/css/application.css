@@ -896,7 +896,7 @@ img {
 #works
 ================================================================*/
 .works {
-  background-color: blue;
+  background-color: #FAFAFA;
   height: auto;
   padding: 128px 0px 125px 0px; }
   @media screen and (max-width: 767px) {
@@ -944,10 +944,11 @@ img {
     opacity: 0;
     position: fixed;
     top: 0;
-    transition: 1s ease-in;
+    transition: 3s ease-in;
     visibility: hidden;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    -webkit-transform: translate(100px, 100px);
     overflow: hidden;
     width: 100%;
     z-index: 200;
@@ -992,7 +993,7 @@ img {
         right: 0; } }
   .works__wrapper {
     cursor: default;
-    background-color: red;
+    background-color: #FFFFFF;
     font-size: 18px;
     height: 80%;
     left: 50%;
