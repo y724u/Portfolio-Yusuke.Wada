@@ -947,18 +947,18 @@ img {
     opacity: 0;
     position: fixed;
     top: 0;
-    transition: 1s ease-in;
+    transition: 3s ease-in;
+    transform: translate3d(0, 0, 0) perspective(0);
     visibility: hidden;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     overflow: hidden;
     width: 100%;
-    z-index: 200;
-    will-change: transform;
-    perspective: 1000; }
+    z-index: 200; }
     .works__window.show_modal {
       opacity: 1;
-      visibility: visible; }
+      visibility: visible;
+      will-change: transform, transition; }
   .works__bg {
     background: rgba(0, 0, 0, 0.8);
     height: 100vh;
