@@ -896,7 +896,7 @@ img {
 #works
 ================================================================*/
 .works {
-  background-color: #FAFAFA;
+  background-color: blue;
   height: auto;
   padding: 128px 0px 125px 0px; }
   @media screen and (max-width: 767px) {
@@ -992,7 +992,7 @@ img {
         right: 0; } }
   .works__wrapper {
     cursor: default;
-    background-color: #ffffff;
+    background-color: red;
     font-size: 18px;
     height: 80%;
     left: 50%;
