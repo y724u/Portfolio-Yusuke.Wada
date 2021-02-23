@@ -80,10 +80,10 @@
     position: fixed;
     top: 0;
     transition: .7s ease-in;
-    transform: translate3d(0, 0, 0) perspective(0);
-    visibility: hidden;
-    backface-visibility:hidden;
-    -webkit-backface-visibility:hidden;
+    // transform: translate3d(0, 0, 0) perspective(0);
+    // visibility: hidden;
+    // backface-visibility:hidden;
+    // -webkit-backface-visibility:hidden;
     // -webkit-transform-style: preserve-3d;
     overflow: hidden;
     width: 100%;
@@ -95,7 +95,7 @@
     &.show_modal {
       opacity: 1;
       visibility: visible;
-      will-change: transform, transition;
+      // will-change: transform, transition;
     }
   }
 

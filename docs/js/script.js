@@ -21,21 +21,21 @@ $(function () {
   });
 
   // <!-- ハンバーガーメニュー -->
-  let state = false;
-  let scrollStop;
+  // let state = false;
+  // let scrollStop;
   $('.js-open').on('click', function () {
     $('.js-open').toggleClass('active');
-    if (state == false) {
-      scrollStop = $(window).scrollTop();
-      $('body').addClass('fixed').css({ 'top': -scrollStop });
-      state = true;
-      return false;
-    } else {
-      $('body').removeClass('fixed').css({ 'top': 0 });
-      window.scrollTo(0, scrollStop);
-      state = false;
-      return false;
-    }
+    // if (state == false) {
+    //   scrollStop = $(window).scrollTop();
+    //   $('body').addClass('fixed').css({ 'top': -scrollStop });
+    //   state = true;
+    //   return false;
+    // } else {
+    //   $('body').removeClass('fixed').css({ 'top': 0 });
+    //   window.scrollTo(0, scrollStop);
+    //   state = false;
+    //   return false;
+    // }
   });
 
   // <!-- ハンバーガーメニューページ内リンク -->
