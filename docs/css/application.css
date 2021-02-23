@@ -438,6 +438,9 @@ common
   .is-sp {
     display: none; } }
 
+html {
+  -webkit-font-smoothing: antialiased; }
+
 body {
   background: #000;
   color: #424242;
@@ -948,11 +951,9 @@ img {
     visibility: hidden;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-    -webkit-transform: translate(100px, 100px);
     overflow: hidden;
     width: 100%;
     z-index: 200;
-    transform: translate3d(0, 0, 0);
     will-change: transform; }
     .works__window.show_modal {
       opacity: 1;
