@@ -25,6 +25,8 @@ html {
   -webkit-text-size-adjust: 100%;
   /* 2 */
   -webkit-tap-highlight-color: transparent;
+  -webkit-animation : anim 0.3s linear 0s 1 normal;
+  -webkit-transform:perspective(0);
   /* 3*/ }
 
 /* Sections */
