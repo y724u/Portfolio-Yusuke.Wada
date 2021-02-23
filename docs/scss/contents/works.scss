@@ -80,16 +80,17 @@
     position: fixed;
     top: 0;
     transition: 3s ease-in;
-    backface-visibility:hidden;
-    width: 100%;
     visibility: hidden;
+    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
+    overflow: hidden;
+    width: 100%;
     z-index: 200;
-    // display: none;
+    transform: translate3d(0, 0, 0);
 
     &.show_modal {
       opacity: 1;
       visibility: visible;
-      // display: inline-block;
     }
   }
 

@@ -566,7 +566,7 @@ img {
     .mv__nav {
       background: #FFFFFF;
       opacity: 0;
-      transition: 1s;
+      transition: .5s;
       position: fixed;
       padding: 54px 23px 20px 18px;
       width: 100vw;
@@ -945,10 +945,13 @@ img {
     position: fixed;
     top: 0;
     transition: 3s ease-in;
-    backface-visibility: hidden;
-    width: 100%;
     visibility: hidden;
-    z-index: 200; }
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    overflow: hidden;
+    width: 100%;
+    z-index: 200;
+    transform: translate3d(0, 0, 0); }
     .works__window.show_modal {
       opacity: 1;
       visibility: visible; }
