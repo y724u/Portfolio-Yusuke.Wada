@@ -49,13 +49,13 @@ $(function () {
     const modal = $('#' + target);
     scrollPosition = $(window).scrollTop();
     $(modal).addClass('show_modal');
-    $('body').addClass('fixed').css({ 'top': -scrollPosition });
-    return false;
+    // $('body').addClass('fixed').css({ 'top': -scrollPosition });
+    // return false;
   });
   $('.js-modalClose').on('click', function () {
     $('.js-modal').removeClass('show_modal');
-    $('body').removeClass('fixed').css({ 'top': 0 });
-    window.scrollTo(0, scrollPosition);
+    // $('body').removeClass('fixed').css({ 'top': 0 });
+    // window.scrollTo(0, scrollPosition);
   });
 
   // <!-- Slider  -->
