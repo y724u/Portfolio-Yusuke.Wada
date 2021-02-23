@@ -29,17 +29,21 @@ $(function () {
       scrollStop = $(window).scrollTop();
       $('body').addClass('fixed').css({ 'top': -scrollStop });
       state = true;
+      return false;
     } else {
       $('body').removeClass('fixed').css({ 'top': 0 });
       window.scrollTo(0, scrollStop);
       state = false;
+      return false;
     }
   });
 
   // <!-- ハンバーガーメニューページ内リンク -->
-  $('.js-link').on('click', function () {
+  $('.js-link').on('click', function (e) {
+    e.preventDefault();
     $('.js-open').removeClass('active');
     $('body').removeClass('fixed');
+    return false;
   });
 
   // <!-- サービスシステム開発モーダル -->
@@ -56,6 +60,7 @@ $(function () {
     $('.js-modal').removeClass('show_modal');
     // $('body').removeClass('fixed').css({ 'top': 0 });
     // window.scrollTo(0, scrollPosition);
+    // return false;
   });
 
   // <!-- Slider  -->
