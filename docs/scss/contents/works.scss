@@ -79,7 +79,7 @@
     opacity: 0;
     position: fixed;
     top: 0;
-    transition: 3s ease-in;
+    transition: 1s ease-in;
     visibility: hidden;
     backface-visibility:hidden;
     -webkit-backface-visibility:hidden;
@@ -89,6 +89,7 @@
     z-index: 200;
     // transform: translate3d(0, 0, 0);
     will-change: transform;
+    perspective: 1000; //正の値
 
     &.show_modal {
       opacity: 1;
