@@ -39,7 +39,7 @@
     @include mq(sm) {
       background: $key-color-white;
       opacity: 0;
-      transition: .7s;
+      transition: 1s;
       position: fixed;
       padding: 54px 23px 20px 18px;
       width: 100vw;
