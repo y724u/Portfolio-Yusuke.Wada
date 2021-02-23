@@ -87,6 +87,7 @@
     width: 100%;
     z-index: 200;
     transform: translate3d(0, 0, 0);
+    will-change: transform;
 
     &.show_modal {
       opacity: 1;

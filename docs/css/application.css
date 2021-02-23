@@ -951,7 +951,8 @@ img {
     overflow: hidden;
     width: 100%;
     z-index: 200;
-    transform: translate3d(0, 0, 0); }
+    transform: translate3d(0, 0, 0);
+    will-change: transform; }
     .works__window.show_modal {
       opacity: 1;
       visibility: visible; }
