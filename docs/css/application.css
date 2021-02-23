@@ -947,15 +947,17 @@ img {
     opacity: 0;
     position: fixed;
     top: 0;
-    transition: 1s ease-in;
+    transition: 3s ease-in;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     width: 100%;
     visibility: hidden;
-    z-index: 200; }
+    z-index: 200;
+    display: none; }
     .works__window.show_modal {
       opacity: 1;
-      visibility: visible; }
+      visibility: visible;
+      display: inline-block; }
   .works__bg {
     background: rgba(0, 0, 0, 0.8);
     height: 100vh;
