@@ -16,7 +16,7 @@ common
 }
 
 body {
-  background: #000;
+  // background: #000;
   color: $font-black;
   cursor: none;
   font-family: $font-family-alata;
@@ -76,8 +76,8 @@ body {
   width: 100%;
   height: 100%;
   left: 0;
-  -webkit-transform: translate3d(0,0,0);
-transform: translate3d(0,0,0);
+//   -webkit-transform: translate3d(0,0,0);
+// transform: translate3d(0,0,0);
 -webkit-backface-visibility:hidden;
 backface-visibility:hidden;
 overflow:hidden
