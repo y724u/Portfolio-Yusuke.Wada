@@ -23,6 +23,8 @@ $(function () {
   // <!-- ハンバーガーメニュー -->
   // let state = false;
   // let scrollStop;
+
+  
   $('.js-open').on('click', function () {
     $('.js-open').toggleClass('active');
     // if (state == false) {
@@ -37,6 +39,18 @@ $(function () {
       return false;
     // }
   });
+
+  
+  let scrollPosition;
+    $(".js-modalOpen").on("click", function() {
+      scrollPosition = $(window).scrollTop();
+      $('body').addClass('fixed').css({'top': -scrollPosition});
+    });
+    $(".js-modalClose").on("click", function() {
+      $('body').removeClass('fixed').css({'top': 0});
+      window.scrollTo( 0 , scrollPosition );
+    });
+  
 
   // <!-- ハンバーガーメニューページ内リンク -->
   $('.js-link').on('click', function (e) {
