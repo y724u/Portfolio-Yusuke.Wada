@@ -34,7 +34,7 @@ $(function () {
     //   $('body').removeClass('fixed').css({ 'top': 0 });
     //   window.scrollTo(0, scrollStop);
     //   state = false;
-    //   return false;
+      return false;
     // }
   });
 
@@ -42,25 +42,27 @@ $(function () {
   $('.js-link').on('click', function (e) {
     e.preventDefault();
     $('.js-open').removeClass('active');
-    $('body').removeClass('fixed');
+    // $('body').removeClass('fixed');
     return false;
   });
 
   // <!-- サービスシステム開発モーダル -->
-  let scrollPosition;
-  $('.js-modalOpen').on('click', function () {
+  // let scrollPosition;
+  $('.js-modalOpen').on('click', function (e) {
+    e.preventDefault();
     const target = $(this).data('target');
     const modal = $('#' + target);
-    scrollPosition = $(window).scrollTop();
     $(modal).addClass('show_modal');
+    // scrollPosition = $(window).scrollTop();
     // $('body').addClass('fixed').css({ 'top': -scrollPosition });
-    // return false;
+    return false;
   });
-  $('.js-modalClose').on('click', function () {
+  $('.js-modalClose').on('click', function (e) {
+    e.preventDefault();
     $('.js-modal').removeClass('show_modal');
     // $('body').removeClass('fixed').css({ 'top': 0 });
     // window.scrollTo(0, scrollPosition);
-    // return false;
+    return false;
   });
 
   // <!-- Slider  -->
