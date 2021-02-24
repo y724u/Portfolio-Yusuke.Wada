@@ -81,15 +81,9 @@
     top: 0;
     transition: 1s ease-in;
     visibility: hidden;
-    // backface-visibility:hidden;
-    // -webkit-backface-visibility:hidden;
-    // -webkit-transform-style: preserve-3d;
     overflow: hidden;
     width: 100%;
     z-index: 200;
-    // transform: translate3d(0, 0, 0);
-    // will-change: transform;
-    // perspective: 1000; //正の値
 
     &.show_modal {
       opacity: 1;
@@ -148,7 +142,8 @@
     height: 80%;
     left: 50%;
     line-height: 32px;
-    overflow-y: scroll;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     padding: 5%;
     position: absolute;
     top: 50%;
