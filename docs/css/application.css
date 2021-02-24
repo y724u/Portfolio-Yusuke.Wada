@@ -944,7 +944,7 @@ img {
     opacity: 0;
     position: fixed;
     top: 0;
-    transition: 3s ease-in;
+    transition: 1s ease-in;
     visibility: hidden;
     overflow: hidden;
     width: 100%;
