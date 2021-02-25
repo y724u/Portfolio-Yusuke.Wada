@@ -489,7 +489,7 @@ body {
   left: 0; }
   @media screen and (max-width: 767px) {
     .fixed {
-      position: static;
+      position: fixed;
       height: 100vh;
       overflow: hidden; } }
 
@@ -948,7 +948,7 @@ img {
     opacity: 0;
     position: fixed;
     top: 0;
-    transition: 2s ease-in;
+    transition: .5s ease-in;
     visibility: hidden;
     overflow: hidden;
     width: 100%;
@@ -958,11 +958,13 @@ img {
       visibility: visible; }
   .works__bg {
     background: rgba(0, 0, 0, 0.8);
-    height: 100%;
+    height: 100vh;
     position: absolute;
     width: 100%;
     cursor: pointer;
-    z-index: 200; }
+    z-index: 200;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
   .works__modal {
     cursor: pointer;
     height: 100%;

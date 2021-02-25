@@ -16,7 +16,6 @@ common
 }
 
 body {
-  // background: #000;
   color: $font-black;
   cursor: none;
   font-family: $font-family-alata;
@@ -83,7 +82,7 @@ body {
   // backface-visibility:hidden;
 
   @include mq(sm) {
-    position: static;
+    position: fixed;
     height: 100vh;
     overflow: hidden;
   }
