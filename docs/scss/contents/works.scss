@@ -84,12 +84,10 @@
     overflow: hidden;
     width: 100%;
     z-index: 200;
-    transform: scale(1.2);
 
     &.show_modal {
       opacity: 1;
       visibility: visible;
-      transform: scale(1);
     }
   }
 

@@ -948,12 +948,10 @@ img {
     visibility: hidden;
     overflow: hidden;
     width: 100%;
-    z-index: 200;
-    transform: scale(1.2); }
+    z-index: 200; }
     .works__window.show_modal {
       opacity: 1;
-      visibility: visible;
-      transform: scale(1); }
+      visibility: visible; }
   .works__bg {
     background: rgba(0, 0, 0, 0.8);
     height: 100vh;
