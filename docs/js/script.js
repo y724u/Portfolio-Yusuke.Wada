@@ -21,62 +21,57 @@ $(function () {
   });
 
   // <!-- ハンバーガーメニュー -->
-  // let state = false;
-  // let scrollStop;
-
-  
-  $('.js-open').on('click', function () {
+  let state = false;
+  let scrollStop;
+  $('.js-open').on('click', function (e) {
+    e.preventDefault();
     $('.js-open').toggleClass('active');
-    // if (state == false) {
-    //   scrollStop = $(window).scrollTop();
-    //   $('body').addClass('fixed').css({ 'top': -scrollStop });
-    //   state = true;
-    //   return false;
-    // } else {
-    //   $('body').removeClass('fixed').css({ 'top': 0 });
-    //   window.scrollTo(0, scrollStop);
-    //   state = false;
+    if (state == false) {
+      scrollStop = $(window).scrollTop();
+      $('body').addClass('fixed').css({ 'top': -scrollStop });
+      state = true;
       return false;
-    // }
+    } else {
+      $('body').removeClass('fixed').css({ 'top': 0 });
+      window.scrollTo(0, scrollStop);
+      state = false;
+      return false;
+    }
   });
-
-  
-  let scrollPosition;
-    $(".js-modalOpen").on("click", function() {
-      scrollPosition = $(window).scrollTop();
-      $('body').addClass('fixed').css({'top': -scrollPosition});
-    });
-    $(".js-modalClose").on("click", function() {
-      $('body').removeClass('fixed').css({'top': 0});
-      window.scrollTo( 0 , scrollPosition );
-    });
-  
 
   // <!-- ハンバーガーメニューページ内リンク -->
   $('.js-link').on('click', function (e) {
     e.preventDefault();
     $('.js-open').removeClass('active');
-    // $('body').removeClass('fixed');
+    $('body').removeClass('fixed');
     return false;
   });
 
   // <!-- サービスシステム開発モーダル -->
-  // let scrollPosition;
   $('.js-modalOpen').on('click', function (e) {
     e.preventDefault();
     const target = $(this).data('target');
     const modal = $('#' + target);
     $(modal).addClass('show_modal');
-    // scrollPosition = $(window).scrollTop();
-    // $('body').addClass('fixed').css({ 'top': -scrollPosition });
     return false;
   });
   $('.js-modalClose').on('click', function (e) {
     e.preventDefault();
     $('.js-modal').removeClass('show_modal');
-    // $('body').removeClass('fixed').css({ 'top': 0 });
-    // window.scrollTo(0, scrollPosition);
     return false;
+  });
+
+  // <!-- モーダルスクロール止める -->
+  let scrollPosition;
+  $(".js-modalOpen").on("click", function(e) {
+    e.preventDefault();
+    scrollPosition = $(window).scrollTop();
+    $('body').addClass('fixed').css({'top': -scrollPosition});
+  });
+  $(".js-modalClose").on("click", function(e) {
+    e.preventDefault();
+    $('body').removeClass('fixed').css({'top': 0});
+    window.scrollTo( 0 , scrollPosition );
   });
 
   // <!-- Slider  -->
