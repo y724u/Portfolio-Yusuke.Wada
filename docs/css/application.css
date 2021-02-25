@@ -944,14 +944,16 @@ img {
     opacity: 0;
     position: fixed;
     top: 0;
-    transition: .5s ease-in;
+    transition: .7s ease-in;
     visibility: hidden;
     overflow: hidden;
     width: 100%;
-    z-index: 200; }
+    z-index: 200;
+    transform: scale(1.2); }
     .works__window.show_modal {
       opacity: 1;
-      visibility: visible; }
+      visibility: visible;
+      transform: scale(1); }
   .works__bg {
     background: rgba(0, 0, 0, 0.8);
     height: 100vh;
