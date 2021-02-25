@@ -31,6 +31,7 @@ body {
 }
 
 @include mq(md) {
+
   div,
   li,
   a,
@@ -72,15 +73,20 @@ body {
 }
 
 .fixed {
-  // position: fixed;
+  position: fixed;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   left: 0;
-//   -webkit-transform: translate3d(0,0,0);
-// transform: translate3d(0,0,0);
-// -webkit-backface-visibility:hidden;
-// backface-visibility:hidden;
-overflow:hidden
+  //   -webkit-transform: translate3d(0,0,0);
+  // transform: translate3d(0,0,0);
+  // -webkit-backface-visibility:hidden;
+  // backface-visibility:hidden;
+
+  @include mq(sm) {
+    position: static;
+    height: 100vh;
+    overflow: hidden;
+  }
 }
 
 img {
