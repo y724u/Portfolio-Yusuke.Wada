@@ -21,21 +21,18 @@ $(function () {
   });
 
   // <!-- ハンバーガーメニュー -->
-  let state = false;
-  let scrollStop;
-  $('.js-open').on('click', function (e) {
-    e.preventDefault();
+  var state = false;
+  var scrollpos;
+  $('.js-open').on('click', function () {
     $('.js-open').toggleClass('active');
-    if (state == false) {
-      scrollStop = $(window).scrollTop();
-      $('body').addClass('fixed').css({ 'top': -scrollStop });
+    if(state == false) {
+      scrollpos = $(window).scrollTop();
+      $('body').addClass('fixed').css({'top': -scrollpos});
       state = true;
-      return false;
     } else {
-      $('body').removeClass('fixed').css({ 'top': 0 });
-      window.scrollTo(0, scrollStop);
+      $('body').removeClass('fixed').css({'top': 0});
+      window.scrollTo( 0 , scrollpos );
       state = false;
-      return false;
     }
   });
 
@@ -44,34 +41,29 @@ $(function () {
     e.preventDefault();
     $('.js-open').removeClass('active');
     $('body').removeClass('fixed');
-    return false;
   });
 
   // <!-- サービスシステム開発モーダル -->
-  $('.js-modalOpen').on('click', function (e) {
-    e.preventDefault();
+  $('.js-modalOpen').on('click', function () {
     const target = $(this).data('target');
     const modal = $('#' + target);
     $(modal).addClass('show_modal');
     return false;
   });
-  $('.js-modalClose').on('click', function (e) {
-    e.preventDefault();
+  $('.js-modalClose').on('click', function () {
     $('.js-modal').removeClass('show_modal');
     return false;
   });
 
   // <!-- モーダルスクロール止める -->
   let scrollPosition;
-  $(".js-modalOpen").on("click", function(e) {
-    e.preventDefault();
+  $(".js-modalOpen").on("click", function () {
     scrollPosition = $(window).scrollTop();
-    $('body').addClass('fixed').css({'top': -scrollPosition});
+    $('body').addClass('fixed').css({ 'top': -scrollPosition });
   });
-  $(".js-modalClose").on("click", function(e) {
-    e.preventDefault();
-    $('body').removeClass('fixed').css({'top': 0});
-    window.scrollTo( 0 , scrollPosition );
+  $(".js-modalClose").on("click", function () {
+    $('body').removeClass('fixed').css({ 'top': 0 });
+    window.scrollTo(0, scrollPosition);
   });
 
   // <!-- Slider  -->
