@@ -98,8 +98,8 @@
     width: 100%;
     cursor: pointer;
     z-index: 200;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+    // -webkit-backface-visibility: hidden;
+    // backface-visibility: hidden;
   }
 
   &__modal {
