@@ -50,23 +50,21 @@ $(function () {
     const target = $(this).data('target');
     const modal = $('#' + target);
     $(modal).addClass('show_modal');
-    return false;
   });
   $('.js-modalClose').on('click', function () {
     $('.js-modal').removeClass('show_modal');
-    return false;
   });
 
   // <!-- モーダルスクロール止める -->
-  // let scrollPosition;
-  // $(".js-modalOpen").on("click", function () {
-  //   scrollPosition = $(window).scrollTop();
-  //   $('body').addClass('fixed').css({ 'top': -scrollPosition });
-  // });
-  // $(".js-modalClose").on("click", function () {
-  //   $('body').removeClass('fixed').css({ 'top': 0 });
-  //   window.scrollTo(0, scrollPosition);
-  // });
+  let scrollPosition;
+  $(".js-modalOpen").on("click", function () {
+    scrollPosition = $(window).scrollTop();
+    $('body').addClass('fixed').css({ 'top': -scrollPosition });
+  });
+  $(".js-modalClose").on("click", function () {
+    $('body').removeClass('fixed').css({ 'top': 0 });
+    window.scrollTo(0, scrollPosition);
+  });
 
   // <!-- Slider  -->
   const swiper = new Swiper('.swiper-container', {
@@ -126,20 +124,20 @@ $(function () {
 
   //カーソルの遅延アニメーション
   //ほんの少しだけ遅延させる 0.001秒
-  // TweenMax.to({}, .001, {
-  //   repeat: -1,
-  //   onRepeat: function () {
-  //     posX += (mouseX - posX) / delay;
-  //     posY += (mouseY - posY) / delay;
+  TweenMax.to({}, .001, {
+    repeat: -1,
+    onRepeat: function () {
+      posX += (mouseX - posX) / delay;
+      posY += (mouseY - posY) / delay;
 
-  //     TweenMax.set(cursor, {
-  //       css: {
-  //         left: mouseX - (cWidth / 2),
-  //         top: mouseY - (cWidth / 2)
-  //       }
-  //     });
-  //   }
-  // });
+      TweenMax.set(cursor, {
+        css: {
+          left: mouseX - (cWidth / 2),
+          top: mouseY - (cWidth / 2)
+        }
+      });
+    }
+  });
 
   //マウス座標を取得
   $(document).on("mousemove", function (e) {
