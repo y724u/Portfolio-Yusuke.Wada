@@ -124,20 +124,20 @@ $(function () {
 
   //カーソルの遅延アニメーション
   //ほんの少しだけ遅延させる 0.001秒
-  TweenMax.to({}, .001, {
-    repeat: -1,
-    onRepeat: function () {
-      posX += (mouseX - posX) / delay;
-      posY += (mouseY - posY) / delay;
+  // TweenMax.to({}, .001, {
+  //   repeat: -1,
+  //   onRepeat: function () {
+  //     posX += (mouseX - posX) / delay;
+  //     posY += (mouseY - posY) / delay;
 
-      TweenMax.set(cursor, {
-        css: {
-          left: mouseX - (cWidth / 2),
-          top: mouseY - (cWidth / 2)
-        }
-      });
-    }
-  });
+  //     TweenMax.set(cursor, {
+  //       css: {
+  //         left: mouseX - (cWidth / 2),
+  //         top: mouseY - (cWidth / 2)
+  //       }
+  //     });
+  //   }
+  // });
 
   //マウス座標を取得
   $(document).on("mousemove", function (e) {
