@@ -37,10 +37,12 @@ $(function () {
   });
 
   // <!-- ハンバーガーメニューページ内リンク -->
-  $('.js-link').on('click', function (e) {
-    e.preventDefault();
+  $('.js-link').on('click', function () {
     $('.js-open').removeClass('active');
     $('body').removeClass('fixed');
+    if($('.js-open').hasClass('active')){
+      $('.js-open').removeClass('active');
+    }
   });
 
   // <!-- サービスシステム開発モーダル -->
@@ -56,15 +58,15 @@ $(function () {
   });
 
   // <!-- モーダルスクロール止める -->
-  let scrollPosition;
-  $(".js-modalOpen").on("click", function () {
-    scrollPosition = $(window).scrollTop();
-    $('body').addClass('fixed').css({ 'top': -scrollPosition });
-  });
-  $(".js-modalClose").on("click", function () {
-    $('body').removeClass('fixed').css({ 'top': 0 });
-    window.scrollTo(0, scrollPosition);
-  });
+  // let scrollPosition;
+  // $(".js-modalOpen").on("click", function () {
+  //   scrollPosition = $(window).scrollTop();
+  //   $('body').addClass('fixed').css({ 'top': -scrollPosition });
+  // });
+  // $(".js-modalClose").on("click", function () {
+  //   $('body').removeClass('fixed').css({ 'top': 0 });
+  //   window.scrollTo(0, scrollPosition);
+  // });
 
   // <!-- Slider  -->
   const swiper = new Swiper('.swiper-container', {
