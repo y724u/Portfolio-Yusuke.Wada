@@ -46,7 +46,7 @@ $(function () {
     setTimeout(function () {
       scrollPosition = $(window).scrollTop();
       $('body').addClass('fixed').css({ 'top': -scrollPosition });
-    }, 400);
+    }, 200);
   });
   $(".js-modalClose").on("click", function () {
     $('body').removeClass('fixed').css({ 'top': 0 });
