@@ -41,23 +41,12 @@ $(function () {
   });
 
   // <!-- モーダルスクロール止める -->
-  // let scrollPosition;
-  // $(".js-modalOpen").on("click", function () {
-  //   scrollPosition = $(window).scrollTop();
-  //   $('body').addClass('fixed').css({ 'top': -scrollPosition });
-  // });
-  // $(".js-modalClose").on("click", function () {
-  //   $('body').removeClass('fixed').css({ 'top': 0 });
-  //   window.scrollTo(0, scrollPosition);
-  // });
-
-  // <!-- モーダルスクロール止める -->
   let scrollPosition;
   $(".js-modalOpen").on("click", function () {
-    setTimeout(function(){
+    setTimeout(function () {
       scrollPosition = $(window).scrollTop();
       $('body').addClass('fixed').css({ 'top': -scrollPosition });
-   },400);
+    }, 400);
   });
   $(".js-modalClose").on("click", function () {
     $('body').removeClass('fixed').css({ 'top': 0 });
