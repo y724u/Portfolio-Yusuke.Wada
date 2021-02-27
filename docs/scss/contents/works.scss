@@ -76,7 +76,7 @@
   // <-- modal -->
   &__window {
     height: 100vh;
-    height: -webkit-fill-available;
+    // height: -webkit-fill-available;
     opacity: 0;
     position: fixed;
     top: 0;
