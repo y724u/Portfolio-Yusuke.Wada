@@ -57,7 +57,7 @@ $(function () {
     setTimeout(function(){
       scrollPosition = $(window).scrollTop();
       $('body').addClass('fixed').css({ 'top': -scrollPosition });
-   },100);
+   },600);
   });
   $(".js-modalClose").on("click", function () {
     $('body').removeClass('fixed').css({ 'top': 0 });
