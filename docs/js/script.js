@@ -1,5 +1,25 @@
-// <!-- スムーススクロール -->
 $(function () {
+  // <!-- ハンバーガーメニュー -->
+  var state = false;
+  var scrollpos;
+  $('.js-open').on('click', function () {
+    $('.js-open').toggleClass('active');
+    if (state == false) {
+      scrollpos = $(window).scrollTop();
+      $('body').addClass('fixed').css({ 'top': -scrollpos });
+      state = true;
+    } else {
+      $('body').removeClass('fixed').css({ 'top': 0 });
+    }
+  });
+
+  // <!-- ハンバーガーメニューページ内リンク -->
+  $('.js-link').on('click', function () {
+    $('.js-open').removeClass('active');
+    $('body').removeClass('fixed');
+  });
+
+  // <!-- スムーススクロール -->
   // #から始まるURLがクリックされた時
   $('a[href^="#"]').on('click', function () {
     // 移動速度を指定（ミリ秒）
@@ -20,29 +40,15 @@ $(function () {
     return false;
   });
 
-  // <!-- ハンバーガーメニュー -->
-  var state = false;
-  var scrollpos;
-  $('.js-open').on('click', function () {
-    $('.js-open').toggleClass('active');
-    if(state == false) {
-      scrollpos = $(window).scrollTop();
-      $('body').addClass('fixed').css({'top': -scrollpos});
-      state = true;
-    } else {
-      $('body').removeClass('fixed').css({'top': 0});
-      window.scrollTo( 0 , scrollpos );
-      state = false;
-    }
+  // <!-- モーダルスクロール止める -->
+  let scrollPosition;
+  $(".js-modalOpen").on("click", function () {
+    scrollPosition = $(window).scrollTop();
+    $('body').addClass('fixed').css({ 'top': -scrollPosition });
   });
-
-  // <!-- ハンバーガーメニューページ内リンク -->
-  $('.js-link').on('click', function () {
-    $('.js-open').removeClass('active');
-    $('body').removeClass('fixed');
-    if($('.js-open').hasClass('active')){
-      $('.js-open').removeClass('active');
-    }
+  $(".js-modalClose").on("click", function () {
+    $('body').removeClass('fixed').css({ 'top': 0 });
+    window.scrollTo(0, scrollPosition);
   });
 
   // <!-- サービスシステム開発モーダル -->
@@ -55,16 +61,6 @@ $(function () {
     $('.js-modal').removeClass('show_modal');
   });
 
-  // <!-- モーダルスクロール止める -->
-  let scrollPosition;
-  $(".js-modalOpen").on("click", function () {
-    scrollPosition = $(window).scrollTop();
-    $('body').addClass('fixed').css({ 'top': -scrollPosition });
-  });
-  $(".js-modalClose").on("click", function () {
-    $('body').removeClass('fixed').css({ 'top': 0 });
-    window.scrollTo(0, scrollPosition);
-  });
 
   // <!-- Slider  -->
   const swiper = new Swiper('.swiper-container', {
