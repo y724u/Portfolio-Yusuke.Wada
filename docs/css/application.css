@@ -497,7 +497,7 @@ img {
   height: auto;
   padding: 0 120px 0 180px; }
 
-.mv__container, .about__container, .services__container, .price__container {
+.about__container, .services__container, .price__container {
   max-width: 1200px;
   margin: 0 auto; }
 
@@ -548,7 +548,9 @@ img {
   .mv__image {
     background: url("../images/pc/mv.png") center right/cover; }
   .mv__container {
-    padding: 35px 120px 96px 120px; }
+    max-width: 1440px;
+    padding: 35px 120px 96px 120px;
+    margin: 0 auto; }
     @media screen and (max-width: 767px) {
       .mv__container {
         padding: 30px 5% 35px; } }
