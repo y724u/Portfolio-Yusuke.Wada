@@ -16,7 +16,7 @@ $(function () {
   // <!-- ハンバーガーメニューページ内リンク -->
   $('.js-link').on('click', function () {
     $('.js-open').removeClass('active');
-    $('body').removeClass('fixed');
+    $('body').removeClass('fixed').css({ 'top': 0 });
   });
 
   // <!-- スムーススクロール -->
@@ -60,7 +60,6 @@ $(function () {
   $('.js-modalClose').on('click', function () {
     $('.js-modal').removeClass('show_modal');
   });
-
 
   // <!-- Slider  -->
   const swiper = new Swiper('.swiper-container', {
