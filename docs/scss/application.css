@@ -711,6 +711,7 @@ img {
   .mv__list {
     display: block;
     font-size: 35px;
+    line-height: 45px;
     letter-spacing: .05em;
   }
 }
@@ -721,7 +722,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .mv__item + .mv__item {
-    margin: 27px 0;
+    margin: 18px 0;
   }
 }
 
