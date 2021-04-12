@@ -792,22 +792,22 @@ img {
       .services__contents {
         display: block;
         margin-top: 30px; } }
-    .services__contents div {
+    .services__contents dl {
       padding: 40px 40px 40px 31px;
       height: auto;
       width: 100%; }
       @media screen and (max-width: 767px) {
-        .services__contents div {
+        .services__contents dl {
           padding: 24px 5% 40px 5%;
           height: 190px; } }
-      .services__contents div dt {
+      .services__contents dl dt {
         line-height: 22px;
         letter-spacing: .04em; }
         @media screen and (max-width: 767px) {
-          .services__contents div dt {
+          .services__contents dl dt {
             font-size: 14px;
             letter-spacing: .04em; } }
-        .services__contents div dt span {
+        .services__contents dl dt span {
           display: block;
           font-size: 20px;
           font-family: "Noto Sans JP", "sans-serif";
@@ -816,18 +816,18 @@ img {
           letter-spacing: .04em;
           margin-top: 10px; }
           @media screen and (max-width: 767px) {
-            .services__contents div dt span {
+            .services__contents dl dt span {
               display: inline;
               font-size: 14px;
               line-height: 16px;
               letter-spacing: .04em;
               padding-left: 4px; } }
-      .services__contents div dd {
+      .services__contents dl dd {
         font-family: "Noto Sans JP", "sans-serif";
         line-height: 27px;
         margin-top: 331px; }
         @media screen and (max-width: 767px) {
-          .services__contents div dd {
+          .services__contents dl dd {
             font-size: 12px;
             line-height: 20px;
             letter-spacing: .08em;
